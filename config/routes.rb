@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'weather/show'
   get '/', to: 'home#index'
   get 'giphy/index'
   post 'giphy/show'

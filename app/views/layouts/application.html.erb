@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grety</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-1 text-center">Gerty</h1>
+      <%= form_tag '/giphy/show' do %>
+        <div class="input-group mb-3">
+          <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy"%>
+          <div class="input-group-append">
+            <%= submit_tag 'Search', class:"btn btn-outline-light",id:"button-addon2" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= yield %>
+  </body>
+</html>

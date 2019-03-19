@@ -4787,3 +4787,426 @@ Processing by MovieController#show as HTML
 Completed 200 OK in 497ms (Views: 42.0ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:59:26 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFfyWcK0R8M5qZQFdnBgSeGZcsK8h2bko9Ba6a4VzC3vTS2QTtwI1HUcCuGphuzNht/YCw5Uxmfs62ou0KsL9A==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1323ms (Views: 278.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:59:40 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qaWyzQ8EORXKSeGClKJRAfs/TLUhytiVMFhwIZINLjVOv20Eg2x2Aob8f2ZLVN2FnHnmfJMZeBZ/Y0Dm7LPp7A==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:59:51 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l+zFtw0Vv8QZ4F6Td2+z/Cr+0INH1qn6M4XQtIakwm5w9hp+gX3w01VVwHeomT94Tbh6SvUFCXl8vuBz+BoFtw==", "query"=>"movie avengers", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 110ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 12:00:30 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LL5agEOuQJxdqdGCBOSx0HGEf+pBVoIEB+uXMiXmyqXLpIVJz8YPixEcT2bbEj1UFsLVI/OFIodI0Kf1W1gNfA==", "query"=>"movie hotel mumbai", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 345ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 12:01:13 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7m7R1QMhV0xd4Oj/6RbFliv8UjjZZ40T/EOX3tDoeNgJdA4cj0kYWxFVdhs24EkSTLr48Wu0LZCzeKcZrla/AQ==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 12:01:37 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kLNz28M+QvNRBB2a3TWn+TLwjK6CD0atG6JcBXG1EjR3qawST1YN5B2xg34Cwyt9VbYmZzDc5i5UmWzCDwvV7Q==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 82ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 12:29:23 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/giphy/show" for 127.0.0.1 at 2019-03-19 12:29:30 +1100
+Processing by GiphyController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v/obvPs3qDob8mOf7oEXCGp1PkkKq03s7kbSVVSPJ1RY4MR1d1/nLVdH/Xsxd5uMDTOUgLh47W+hfeKSKjHgjQ==", "query"=>"giphy cat", "commit"=>"Search"}
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1218ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/giphy/show" for 127.0.0.1 at 2019-03-19 12:29:50 +1100
+Processing by GiphyController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RiSJfOvNnAfTqyfJkNdXpz2DAJnY5Kr3Zr5+xqxMyi6hPla1Z6XTEJ8euS1PIdsjWsWqUGo3CnQphU4B0vIN9w==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 427ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 12:29:56 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:30:00 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PNnfF/xHic4LBK5BAdOq6Vqwd2YuWhpPysYfhWIvLdDbwwDecC/G2UexMKXeJSZtPfbdr5yJusyF/S9CHJHqCQ==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3952ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:37:45 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kTBdBwn228AorOYqgXQlzluLdq++juOQITB6IHnUg1Z2KoLOhZ6U12QZeM5egqlKPM3cZgxdQxNuC0rnB2pEjw==", "query"=>"weather chennai", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (83.5ms)
+Completed 500 Internal Server Error in 3189ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "🌤" is not present in the asset pipeline.):
+    2:   <div class="jumbotron wrapper">
+    3:     <section class="graphic">
+    4:       <div class="icon">
+    5:         <%= image_tag  @weather[:emoticon] %>
+    6:       </div>
+    7:     </section>
+    8:     <section class="summary">
+  
+app/views/weather/show.html.erb:5:in `_app_views_weather_show_html_erb__3314634027810236544_70242883306920'
+Started GET "/" for 127.0.0.1 at 2019-03-19 12:42:02 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 356ms (Views: 337.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:42:08 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zhhx40PgS7l5Gm3FVrmYNJ1XvG8KrCuzSNtq2mB1qhEpAq4qz4gErjWv8yGJTxSw+hEWprh/izAH4FodHsttyA==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3495ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:42:35 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C5URlVhAHH+SjPiQmkmwm6JQe4zO0XnKavvslqPr7evsj85c1ChTaN45ZnRFvzwfxRbRRXwC2UklwNxR3VUqMg==", "query"=>"weather Sydney", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3235ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:43:06 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ohjt/V82+ZPPkwP2fFYtDAZ5OjdK1I/9QJiaxJThbSVFAjI00162hIMmnRKjoKGIYT+Q/vgHL34Po6oD6l+q/A==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3058ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:43:54 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pGbFXo1Z407gUpwcBE4j0i+VaGslRK+K+UJNrsQQejBDfBqXATGsWaznAvjbuK9WSNPCopeXDwm2eX1puq696Q==", "query"=>"weather chennai", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2874ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:44:48 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NSj29g7wYcoJEYVhu4vIHkz7wL3z7DEbtYCZlopbDuDSMik/gpgu3UWkG4VkfUSaK71qdEE/kZj6u6lR9OXJOQ==", "query"=>"weather Sydney", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3570ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:46:40 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bl6ytBAo9FnNtXQK4TYb7lfNSxigbQjToa4H1PeikpCJRG19nEC7ToEA6u4+wJdqMIvh0RK+qFDulTcTiRxVSQ==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3248ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 12:47:14 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T+68aMmx1giyd3749VigWLHAzgKjK07An5e+/01hNdCo9GOhRdmZH/7C4Bwqrizc1oZkyxH47kPQrI44M9/yCQ==", "query"=>"weather chennai", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2960ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:35:22 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tfEZTpY85PuSMMv+ohXpZ45JcTCkg3zCRD0zd4pwi7NS68aHGlSr7N6FVRp942Xj6Q/b+RZQ3EELBgOw9M5Mag==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3201ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:35:56 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yu/t0FotNuu+ybEkm3zbNhV8POki+KpozyCc5fJsDdaF9TIZ1kV5/PJ8L8BEileycjqWIJArCuuAG6wijNLKDw==", "query"=>"weather chennai", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2614ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:36:35 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sj83FDVuPJeIqnnfxVyfVUxhBOLcRopzZnwO30pt8phVJejduQZzgMQf5zsaqhPRKyeuK26VKvApRz4YNNM1QQ==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3064ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:37:15 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KBTfYA2jaVyvK0RuAcAAqXEtseRw924sBvH5V3uazBPPDgCpgcsmS+Oe2oreNowtFmsbLcIkzq9JysmQBSQLyg==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3937ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:38:11 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C3Z/q+va01S89keUNX8q5o8unQRcAUcYgOABPsbBTSDsbKBiZ7KcQ/BD2XDqiaZi6Gg3ze7S55vP2zH5uH+K+Q==", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3021ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:38:29 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AfA/yGJ6xfFwkOO7bfwj5PB9iDVU0C/5cArVrvKbKsPm6uAB7hKK5jwlfV+yCq9glzsi/OYDj3o/MeVpjCXtGg==", "query"=>"weather Sydney", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3342ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:38:49 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CMThsAHDO3uodEBiCjAFzhZ0U5pKXf2z3qTffIq5zhLv3j55jat0bOTB3obVxolKcTL5U/iOXTCRn++79AcJyw==", "query"=>"weather singapore", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3023ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:39:21 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O7kKWaw0xeRhR8wnQf6fooZjeMc8fIjjs/AoOIDrz1jco9WQIFyK8y3yUsOeCBMm4SXSDo6vKGD8yxj//lUIgQ==", "query"=>"weather perth", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3196ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/weather/show" for 127.0.0.1 at 2019-03-19 13:39:47 +1100
+Processing by WeatherController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aY/KUuXrMGZ4gVBOeQgxdhaBDR/6U1qQPw6Nk15zXryOlRWbaYN/cTQ0zqqm/r3yccen1kiA+hNwNb1UIM2ZZQ==", "query"=>"weather italy", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3096ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 13:43:35 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 14:04:02 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 202ms (Views: 192.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 14:04:06 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FVGYsWXSuyNNvn7k9RLKEk6bFWotDJ2qNPIl64XRvjjyS0d46br0NAEL4AAq5EaWKd2/o5/fPSl7yRUs+2954Q==", "query"=>"movie ", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 887ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    11:       </div>
+    12:       <div class="row">
+    13:         <div class="col-md-4">
+    14:           <%= image_tag @movie[:poster] %>
+    15:         </div>
+    16:         <div class="col">
+    17:           <h4>Director:</h4>
+  
+app/views/movie/show.html.erb:14:in `_app_views_movie_show_html_erb___3376746233479868769_70239029730300'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 14:05:25 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FVGYsWXSuyNNvn7k9RLKEk6bFWotDJ2qNPIl64XRvjjyS0d46br0NAEL4AAq5EaWKd2/o5/fPSl7yRUs+2954Q==", "query"=>"movie home", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 102ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 14:05:43 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+LBqDzDbwiVqlrAPkCmo0Z5Or5urwyOzBUMhILk9Uz4fqrXGvLONMiYjLutP3yRV+QgFUhkQgzBKeBHnx4OU5w==", "query"=>"avengers", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    11:       </div>
+    12:       <div class="row">
+    13:         <div class="col-md-4">
+    14:           <%= image_tag @movie[:poster] %>
+    15:         </div>
+    16:         <div class="col">
+    17:           <h4>Director:</h4>
+  
+app/views/movie/show.html.erb:14:in `_app_views_movie_show_html_erb___3376746233479868769_70239007906560'
+Started GET "/movie/show" for 127.0.0.1 at 2019-03-19 14:05:46 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/show"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 14:05:54 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FVGYsWXSuyNNvn7k9RLKEk6bFWotDJ2qNPIl64XRvjjyS0d46br0NAEL4AAq5EaWKd2/o5/fPSl7yRUs+2954Q==", "query"=>"movie avengers", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 79ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 14:09:12 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 14:09:16 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ILPIfFvc23Z9CbrtqAhB22Z/34ctSxxaN2TfmhloJY3HqRe117SUYTG8JAl3/s1fATl1Tp+YvNl4X+9dZ9biVA==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 72ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 14:09:22 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vbYJcqgwD+tB54jeTS9X4FnDdTOCLmCBwy9y46IPf0ZarNa7JFhA/A1SFjqS2dtkPoXf+jD9wAKMFEIk3LG4nw==", "query"=>"movie", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    11:       </div>
+    12:       <div class="row">
+    13:         <div class="col-md-4">
+    14:           <%= image_tag @movie[:poster] %>
+    15:         </div>
+    16:         <div class="col">
+    17:           <h4>Director:</h4>
+  
+app/views/movie/show.html.erb:14:in `_app_views_movie_show_html_erb___3376746233479868769_70239030809860'
+Started GET "/movie/show" for 127.0.0.1 at 2019-03-19 14:09:29 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/show"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 14:09:35 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ILPIfFvc23Z9CbrtqAhB22Z/34ctSxxaN2TfmhloJY3HqRe117SUYTG8JAl3/s1fATl1Tp+YvNl4X+9dZ9biVA==", "query"=>"", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    11:       </div>
+    12:       <div class="row">
+    13:         <div class="col-md-4">
+    14:           <%= image_tag @movie[:poster] %>
+    15:         </div>
+    16:         <div class="col">
+    17:           <h4>Director:</h4>
+  
+app/views/movie/show.html.erb:14:in `_app_views_movie_show_html_erb___3376746233479868769_70239031029780'

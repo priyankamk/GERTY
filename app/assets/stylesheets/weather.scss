@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.icon {
-  font-size: 8rem;
+.icon > img{
+  height: 8rem;
+  width: 8rem;
 }
 
 .city {
@@ -14,7 +15,7 @@
 }
 
 .temperature, .summary {
-  font-size: 3rem;
+  // font-size: 3rem;
   display: flex;
   justify-content: center;
 }

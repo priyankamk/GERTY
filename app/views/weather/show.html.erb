@@ -2,18 +2,18 @@
   <div class="jumbotron wrapper">
     <section class="graphic">
       <div class="icon">
-        <%= @weather[:emoticon] %>
+        <%= image_tag @weather[:emoticon] %>
       </div>
     </section>
-    <section class="summary">
-      <h2 class="display-5"><%= @weather[:summary]%></h2>
-    </section>
     <section class="temperature">
-      <h2 class="display-4"> <%= @weather[:current_temperature]
+      <h2> <%= @weather[:current_temperature]
     %>°C</h2>
     </section>
+    <section class="summary">
+      <h3><%= @weather[:summary]%></h5>
+    </section>
     <section class="city">
-      <h2 class="display-3"><%= @weather[:time_zone]%></h2>
+      <h2 class="display-5"><%= @weather[:time_zone]%></h2>
     </section>
   </div>
 </div>

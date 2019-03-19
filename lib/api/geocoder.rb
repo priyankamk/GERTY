@@ -1,6 +1,5 @@
 require 'httparty'
 
-
 module Api
   class Geocoder
     def fetch(query:)

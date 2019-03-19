@@ -3,15 +3,14 @@ require_relative '../../lib/api/giphy'
 require_relative '../../lib/api/movie'
 
 class HomeController < ApplicationController
-
   def index
     if params[:query].nil?
       render 'index' and return
     end
 
     query_array = params[:query].split(" ")
-    action = query_array.shift
-    query_req = query_array.join(' ')
+    action = query_array.shift #eg: giphy or movie
+    query_req = query_array.join(' ') #eg: avengers or rainbow cats
     if action == "weather"
       @weather = Api::Weather.new.fetch(query: query_req)
     elsif action == "giphy"

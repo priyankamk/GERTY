@@ -1,6 +1,6 @@
 require 'httparty'
-
 require_relative 'geocoder'
+
 module Api
   class Weather
     def fetch(query:)

@@ -5532,3 +5532,686 @@ Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
 NameError (uninitialized constant QuoteController::Api):
   
 app/controllers/quote_controller.rb:3:in `show'
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:03:23 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 367ms (Views: 353.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:03:34 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XbiIa2OcX3KtKhct0sEnLNvEz9IRJ/xFky8DEdMonE+bD3oIeY+aoYBNrhovYgY1Cm59vqXP3JZd4zLOfJlqA==", "query"=>"weather Melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `query_arry' for #<HomeController:0x00007ff8dc22bf78>
+Did you mean?  query_array
+               query_req):
+  
+app/controllers/home_controller.rb:9:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:03:54 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XbiIa2OcX3KtKhct0sEnLNvEz9IRJ/xFky8DEdMonE+bD3oIeY+aoYBNrhovYgY1Cm59vqXP3JZd4zLOfJlqA==", "query"=>"weather Melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `new' for :Weather:Symbol
+Did you mean?  next):
+  
+app/controllers/home_controller.rb:13:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:04:06 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XbiIa2OcX3KtKhct0sEnLNvEz9IRJ/xFky8DEdMonE+bD3oIeY+aoYBNrhovYgY1Cm59vqXP3JZd4zLOfJlqA==", "query"=>"weather Melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomeController::Api):
+  
+app/controllers/home_controller.rb:13:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:04:30 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XbiIa2OcX3KtKhct0sEnLNvEz9IRJ/xFky8DEdMonE+bD3oIeY+aoYBNrhovYgY1Cm59vqXP3JZd4zLOfJlqA==", "query"=>"weather Melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 2979ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+lib/api/geocoder.rb:10:in `fetch'
+lib/api/weather.rb:7:in `fetch'
+app/controllers/home_controller.rb:15:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:04:54 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XbiIa2OcX3KtKhct0sEnLNvEz9IRJ/xFky8DEdMonE+bD3oIeY+aoYBNrhovYgY1Cm59vqXP3JZd4zLOfJlqA==", "query"=>"weather Melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 2965ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+lib/api/geocoder.rb:10:in `fetch'
+lib/api/weather.rb:7:in `fetch'
+app/controllers/home_controller.rb:15:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:05:11 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:05:16 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 407ms (Views: 402.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:05:19 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wf40yozAQCRGK5Et+dPoPviOTFxSvKbWSuFbrGW4Ug6+5OsDAKgPMwqeD8kmJWS6n8jmleBvBlUF2mtrGwaV1w==", "query"=>"weather melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ("melbourne"):
+  
+lib/api/weather.rb:7:in `fetch'
+app/controllers/home_controller.rb:15:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:05:32 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wf40yozAQCRGK5Et+dPoPviOTFxSvKbWSuFbrGW4Ug6+5OsDAKgPMwqeD8kmJWS6n8jmleBvBlUF2mtrGwaV1w==", "query"=>"weather melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ("melbourne"):
+  
+lib/api/weather.rb:7:in `fetch'
+app/controllers/home_controller.rb:15:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:05:41 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wf40yozAQCRGK5Et+dPoPviOTFxSvKbWSuFbrGW4Ug6+5OsDAKgPMwqeD8kmJWS6n8jmleBvBlUF2mtrGwaV1w==", "query"=>"weather melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1718ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+lib/api/geocoder.rb:10:in `fetch'
+lib/api/weather.rb:7:in `fetch'
+app/controllers/home_controller.rb:15:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:06:08 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wf40yozAQCRGK5Et+dPoPviOTFxSvKbWSuFbrGW4Ug6+5OsDAKgPMwqeD8kmJWS6n8jmleBvBlUF2mtrGwaV1w==", "query"=>"weather melbourne", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1529ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+lib/api/geocoder.rb:10:in `fetch'
+lib/api/weather.rb:7:in `fetch'
+app/controllers/home_controller.rb:15:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:07:16 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wf40yozAQCRGK5Et+dPoPviOTFxSvKbWSuFbrGW4Ug6+5OsDAKgPMwqeD8kmJWS6n8jmleBvBlUF2mtrGwaV1w==", "query"=>"weather melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5228ms (Views: 361.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:08:16 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:09:02 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:09:11 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xIG1tbt3naluS5yPaZ153EfI5M1ppdPzGM5vGLKer2Ejm2p8Nx/SviL+Amu2a/VYII5OBNt2c3BX9V/fzCBouA==", "query"=>"weather melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3564ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:09:35 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yZyLYoD8puSla4/9TkD3qLexaCiSUj70Cw6auk/QBUUuhlSrDJTp8+neERmRtnss0PfC4SCBnndENap9MW7CnA==", "query"=>"giphy rainbow cat", "commit"=>"Search"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::Giphy):
+  
+app/controllers/home_controller.rb:18:in `search'
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:10:01 +1100
+  
+ActionController::RoutingError (undefined local variable or method `a' for main:Object):
+  
+lib/api/giphy.rb:16:in `<main>'
+app/controllers/home_controller.rb:2:in `<main>'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:10:25 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:10:27 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 314ms (Views: 307.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:10:31 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"us8PCQM5g6iIclTLs6u7HCy0gnIyv94phgZBJ8OgWFld1dDAj1HMv8THyi9sXTeYS/Iou4BsfqrJPXHgvR6fgA==", "query"=>"movie titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 259ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:10:36 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s4uxEQYtMJo9zdTfrH0yAS7fJQx4WXwpMrMPLC77USRUkW7YikV/jXF4Sjtzi76FSZmPxcqK3Kp9iD/rUEWW/Q==", "query"=>"weather melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3876ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-03-19 18:10:45 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T4hU1pCFOiy4goHoOmD2RVT7ujWxn+eHVyZNwdRNTOqokosfHO11O/Q3HwzllnrBM70Q/ANMRwQYHX0GqvOLMw==", "query"=>"giphy rainbow cat", "commit"=>"Search"}
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 962ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:12:15 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/search"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:22:34 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:22:39 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 91ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-19 18:22:43 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 198ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-19 18:22:53 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 63ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-19 18:22:55 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 61ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-19 18:22:56 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=weather+melbourne&commit=Search" for 127.0.0.1 at 2019-03-19 18:31:13 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3827ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=giphy+pink+cats&commit=Search" for 127.0.0.1 at 2019-03-19 18:31:23 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy pink cats", "commit"=>"Search"}
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2262ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:31:36 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:32:09 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:32:18 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:15:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:32:27 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:15:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:32:46 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:16:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:32:56 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (exception class/object expected):
+  
+app/controllers/home_controller.rb:12:in `raise'
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:33:00 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (false):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:33:08 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (<ActionController::Parameters {"controller"=>"home", "action"=>"search"} permitted: false>):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:33:17 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `empty?' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:33:26 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (true):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:33:36 +1100
+Processing by HomeController#search as HTML
+Redirected to 
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `index_url' for #<HomeController:0x00007fdb0e7c4e30>
+Did you mean?  index):
+  
+app/controllers/home_controller.rb:13:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:33:50 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `redirect' for #<HomeController:0x00007fdb0bbd3e48>
+Did you mean?  redirect_to):
+  
+app/controllers/home_controller.rb:13:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:34:35 +1100
+Processing by HomeController#search as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:15:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:34:41 +1100
+Processing by HomeController#search as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:15:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:34:53 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:35:01 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (true):
+  
+app/controllers/home_controller.rb:12:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:35:17 +1100
+Processing by HomeController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (hello):
+  
+app/controllers/home_controller.rb:13:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:35:22 +1100
+Processing by HomeController#search as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/home_controller.rb:15:in `search'
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:35:35 +1100
+Processing by HomeController#search as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:35:36 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 299ms (Views: 295.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:36:01 +1100
+Processing by HomeController#search as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:36:01 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:36:12 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for 127.0.0.1 at 2019-03-19 18:36:14 +1100
+Processing by HomeController#search as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:36:31 +1100
+Processing by HomeController#search as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&query=movie+titanic&commit=Search" for 127.0.0.1 at 2019-03-19 18:36:41 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 261ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 18:36:51 +1100
+Processing by HomeController#search as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+pink+cat&commit=Search" for 127.0.0.1 at 2019-03-19 18:36:57 +1100
+Processing by HomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy pink cat", "commit"=>"Search"}
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2075ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+pink+cat&commit=Search" for 127.0.0.1 at 2019-03-19 18:37:31 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy pink cat", "commit"=>"Search"}
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 401ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+sydney&commit=Search" for 127.0.0.1 at 2019-03-19 18:37:36 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather sydney", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4615ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-19 18:37:57 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 211ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-19 18:38:17 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 66ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-19 18:43:34 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 276ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+melbourne&commit=Search" for 127.0.0.1 at 2019-03-19 18:43:48 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4784ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+melbourne&commit=Search" for 127.0.0.1 at 2019-03-19 18:46:46 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4172ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+sydney&commit=Search" for 127.0.0.1 at 2019-03-19 18:58:13 +1100
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/controllers/home_controller.rb:27: syntax error, unexpected '<', expecting end-of-input):
+  
+app/controllers/home_controller.rb:27: syntax error, unexpected '<', expecting end-of-input
+Started GET "/?utf8=%E2%9C%93&query=weather+sydney&commit=Search" for 127.0.0.1 at 2019-03-19 18:58:19 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather sydney", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3712ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+

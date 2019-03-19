@@ -3724,3 +3724,595 @@ Processing by GiphyController#show as HTML
 Completed 200 OK in 560ms (Views: 79.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-19 09:43:36 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 377ms (Views: 364.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:02:45 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 569ms (Views: 550.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:02:55 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwUNLmCdpsFN1qRba2zVFdvjfolFa19HFzmrfTQ/Cy0gH9Ln7PXp1gFjOr+0mlmRvKXUQPe4/8RYApu6SoHM9A==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant MovieController::Api):
+  
+app/controllers/movie_controller.rb:3:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:03:50 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwUNLmCdpsFN1qRba2zVFdvjfolFa19HFzmrfTQ/Cy0gH9Ln7PXp1gFjOr+0mlmRvKXUQPe4/8RYApu6SoHM9A==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 749ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `resoonse' for #<Api::Movie:0x00007fb6f9cde508>
+Did you mean?  response):
+  
+lib/api/movie.rb:9:in `fetch'
+app/controllers/movie_controller.rb:4:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:04:29 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwUNLmCdpsFN1qRba2zVFdvjfolFa19HFzmrfTQ/Cy0gH9Ln7PXp1gFjOr+0mlmRvKXUQPe4/8RYApu6SoHM9A==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `resoonse' for #<Api::Movie:0x00007fb6fd67f848>
+Did you mean?  response):
+  
+lib/api/movie.rb:9:in `fetch'
+app/controllers/movie_controller.rb:4:in `show'
+Started GET "/movie/show" for 127.0.0.1 at 2019-03-19 10:04:49 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/show"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movie/show" for 127.0.0.1 at 2019-03-19 10:06:49 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/show"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:07:37 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 81ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:07:41 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o4Q/wBaS6m2Tj6lLyJIHeXr3tCRz0G9QFQaXko/nQYJEnuAJmvqlet86N68XZIv9HbEe7cEDz9NaPadV8VmGWw==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `resoonse' for #<Api::Movie:0x00007fb6fcf908e8>
+Did you mean?  response):
+  
+lib/api/movie.rb:9:in `fetch'
+app/controllers/movie_controller.rb:4:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:08:13 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o4Q/wBaS6m2Tj6lLyJIHeXr3tCRz0G9QFQaXko/nQYJEnuAJmvqlet86N68XZIv9HbEe7cEDz9NaPadV8VmGWw==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `resoonse' for #<Api::Movie:0x00007fb6fce3af70>
+Did you mean?  response):
+  
+lib/api/movie.rb:9:in `fetch'
+app/controllers/movie_controller.rb:4:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:08:27 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o4Q/wBaS6m2Tj6lLyJIHeXr3tCRz0G9QFQaXko/nQYJEnuAJmvqlet86N68XZIv9HbEe7cEDz9NaPadV8VmGWw==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `resoonse' for #<Api::Movie:0x00007fb6fcb22018>
+Did you mean?  response):
+  
+lib/api/movie.rb:9:in `fetch'
+app/controllers/movie_controller.rb:4:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:08:38 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o4Q/wBaS6m2Tj6lLyJIHeXr3tCRz0G9QFQaXko/nQYJEnuAJmvqlet86N68XZIv9HbEe7cEDz9NaPadV8VmGWw==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `resoonse' for #<Api::Movie:0x00007fb6fae37188>
+Did you mean?  response):
+  
+lib/api/movie.rb:9:in `fetch'
+app/controllers/movie_controller.rb:4:in `show'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:09:09 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 69ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:09:18 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vozV7t5S64XcbgW32IOgB0ypURLjMzwhJiyCBwNjz5BZlgonUjqkkpDbm1MHdSyDK+/721HgnKJpF7LAfd0ISQ==", "query"=>"movie Titanic", "commit"=>"Search"}
+Completed 500 Internal Server Error in 523ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `resoonse' for #<Api::Movie:0x00007fb6fc833be0>
+Did you mean?  response):
+  
+lib/api/movie.rb:9:in `fetch'
+app/controllers/movie_controller.rb:4:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:14:18 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vozV7t5S64XcbgW32IOgB0ypURLjMzwhJiyCBwNjz5BZlgonUjqkkpDbm1MHdSyDK+/721HgnKJpF7LAfd0ISQ==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    1: <h1>Movie/h1>
+    2:   <p><%= @movie[:title] %></p>
+    3:   <p><%= @movie[:year] %></p>
+    4:   <%= image_tag @movie[:poster] %>
+    5:   <p><%= @movie[:plot] %></p>
+    6:   <p><%= @movie[:director]%></p>
+    7:   <p><%= @movie[:genre]%></p>
+  
+app/views/movie/show.html.erb:4:in `_app_views_movie_show_html_erb__2449316987309775029_70111321624800'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:15:22 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vozV7t5S64XcbgW32IOgB0ypURLjMzwhJiyCBwNjz5BZlgonUjqkkpDbm1MHdSyDK+/721HgnKJpF7LAfd0ISQ==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 413ms (Views: 381.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:15:36 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:15:42 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fuxn7nyWWAaV2AGuGTG3ywjgr/QGLWsrUPMLNhmapt+Z9rgn8P4XEdltn0rGxztPb6YFPbT+y6gfyDvxZyRhBg==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 72ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:16:45 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c2hDGrrBPQ/wHbzV2b9MIaYDrqnBNjF0EQ0K8aRQCSiUcpzTNqlyGLyoIjEGScClwUUEYHPlkfdeNjo22u7O8Q==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:17:40 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F4/TZo5zC1HvFYrdJqtl5y/dEc9357BZZ3KYzz1/xGrwlQyvAhtERqOgFDn5XeljSJu7BsU0ENooSagIQ8EDsw==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:18:50 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eBqCHhPzo69ym5Cy+qOtHwS/XdTmrp49dP/ytLYX3v2fAF3Xn5vsuD4uDlYlVSGbY/n3HVR9Pr47xMJzyKkZJA==", "query"=>"movie home", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 656ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/show" for 127.0.0.1 at 2019-03-19 10:21:57 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/show"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:22:00 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:22:05 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vV6/YBpmxzzaCrbdR5DRxXEr+z1r8kkMhpq/Dy9dzkFaRGCplg6IK5a/KDmYZl1BFm1R9Nkh6Y/JoY/IUeMJmA==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/movie_controller.rb:4:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:22:30 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vV6/YBpmxzzaCrbdR5DRxXEr+z1r8kkMhpq/Dy9dzkFaRGCplg6IK5a/KDmYZl1BFm1R9Nkh6Y/JoY/IUeMJmA==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 933ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:23:00 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G5/OiJou6/sFtvl8Pm9OXxNdTEZ5hfO64fSJj6d1Wtb8hRFBFkak7EkDZ5jhmcLbdBvmj8tWUzmuz7lI2cudDw==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 70ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:23:02 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7wE8hDO/UUFxZRkaKYnqTVcajqSE8a9mjs7ThQyBKHsIG+NNv9ceVj3Qh/72f2bJMFwkbTYiD+XB9eNCcj/vog==", "query"=>"", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 473ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:23:03 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OIGBcF2RcRrwz3NLJsb3dZcb6TjEs0uUueQ397tftPnfm1650fk+Dbx67a/5MHvx8F1D8XZg6xf23wcwxeFzIA==", "query"=>"", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 75ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:23:14 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ANTZw4zG/6vRjBc1cMz2vVvXIJ55ApZqzOKPg7jNbUXnzgYKAK6wvJ05idGvOno5PJGKV8vRNumD2b9ExnOqnA==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:25:25 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LXjCHExDKI6O7ddliT96JWpTssW/4KMWqdZsE3vbjfTKYh3VwCtnmcJYSYFWyfahDRUYDA0zA5Xm7VzUBWVKLQ==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 109ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:27:36 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuFWcGfxjMHvKZvmFMibJBmw0AVAPJgOyW73PVsCFx6x+4m565nD1qOcBQLLPhegfvZ6zPLvOI2GVcf6JbzQxw==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:27:49 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1IekJFHhyzDZYmynGcPlRTi7REM+khw6U/9uN2O85NgznXvt3YmEJ5XX8kPGNWnBX/3uioxBvLkcxF7wHQIjAQ==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 80ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:32:13 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/uwrIoBBonlwSPFCKp1hp6jdyV+LS6lUOKM/RDjjU7EZ9vTrDCntbjz9b6b1a+0jz5tjljmYCdd3mA+DRl2UaA==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ({:title=>nil, :year=>nil, :plot=>nil, :genre=>nil, :poster=>nil, :rating=>nil, :director=>nil}):
+  
+app/controllers/movie_controller.rb:6:in `show'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:44:48 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 109ms (Views: 99.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:45:02 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7H3o6aHr+saeQ+vxcwfdfo1KhAXxJfuSYsToaFjkQgILZzcgLYO10dL2dRWs8VH66gwuzEP2WxEt/9ivJlqF2w==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ({:title=>nil, :year=>nil, :plot=>nil, :genre=>nil, :poster=>nil, :rating=>nil, :director=>nil}):
+  
+app/controllers/movie_controller.rb:5:in `show'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:45:20 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:45:24 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"obXd33UfXJGYKnH8oKYknf+Px/dXDbj2Ut1dvdyG44hGrwIW+XcThtSf7xh/UKgZmMltPuXeGHUd5m16ojgkUQ==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ({:title=>nil, :year=>nil, :plot=>nil, :genre=>nil, :poster=>nil, :rating=>nil, :director=>nil}):
+  
+app/controllers/movie_controller.rb:5:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:45:50 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"obXd33UfXJGYKnH8oKYknf+Px/dXDbj2Ut1dvdyG44hGrwIW+XcThtSf7xh/UKgZmMltPuXeGHUd5m16ojgkUQ==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ({:title=>nil, :year=>nil, :plot=>nil, :genre=>nil, :poster=>nil, :rating=>nil, :director=>nil}):
+  
+app/controllers/movie_controller.rb:5:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:45:58 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"obXd33UfXJGYKnH8oKYknf+Px/dXDbj2Ut1dvdyG44hGrwIW+XcThtSf7xh/UKgZmMltPuXeGHUd5m16ojgkUQ==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ({:title=>nil, :year=>nil, :plot=>nil, :genre=>nil, :poster=>nil, :rating=>nil, :director=>nil}):
+  
+app/controllers/movie_controller.rb:5:in `show'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:46:13 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:46:16 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bls42AxDZm9KNS4sgdSNknk1IFraUn3H5de2cn+KNH+JQecRgCspeAaAsMheIgEWHnOKk2iB3USq7Ia1ATTzpg==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    2:   <div class="jumbotron" >
+    3:     <h1>Movie</h1>
+    4:     <% @movies.each do |movie| %>
+    5:       <p><%= movie[:Title] %></p>
+    6:       <p><%= movie[:Year]%></p>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/movie/show.html.erb:5:in `block in _app_views_movie_show_html_erb__2449316987309775029_70111324510580'
+app/views/movie/show.html.erb:4:in `each'
+app/views/movie/show.html.erb:4:in `_app_views_movie_show_html_erb__2449316987309775029_70111324510580'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:47:19 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:47:24 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rcdLLn3Qmk/pRYmDPHqicjMtqWo6CdpucPb41xjqzlJK3ZTn8bjVWKXwF2fjjC72VGsDo4jaeu0/zcgQZlQJiw==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    2:   <div class="jumbotron" >
+    3:     <h1>Movie</h1>
+    4:     <% @movies.each do |movie| %>
+    5:       <p><%= movie[:Title] %></p>
+    6:       <p><%= movie[:Year] %></p>
+    7:     <% end %>
+    8:   </div>
+  
+app/views/movie/show.html.erb:5:in `block in _app_views_movie_show_html_erb__2449316987309775029_70111322107460'
+app/views/movie/show.html.erb:4:in `each'
+app/views/movie/show.html.erb:4:in `_app_views_movie_show_html_erb__2449316987309775029_70111322107460'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:57:15 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:57:19 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P/JsGBtWokQl9XWKvr1Rt+6pQsV3yFP/S0P1/CItMbzY6LPRlz7tU2lA625hS90zie/oDMUb83wEeMU7XJP2ZQ==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 84ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/show" for 127.0.0.1 at 2019-03-19 10:57:29 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/show"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:57:33 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P/JsGBtWokQl9XWKvr1Rt+6pQsV3yFP/S0P1/CItMbzY6LPRlz7tU2lA625hS90zie/oDMUb83wEeMU7XJP2ZQ==", "query"=>"movie jaws", "commit"=>"Search"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/movie_controller.rb:5:in `show'
+Started GET "/" for 127.0.0.1 at 2019-03-19 10:57:40 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:57:46 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwZZ5pv7RyUVUt4AkCEvz/EA1pzMoAGKCzms5/djeDikHIYvF5MIMlnnQORP16NLlkZ8VX5zoQlEApwgid2/4Q==", "query"=>"movie Titanic", "commit"=>"Search"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/movie_controller.rb:5:in `show'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 10:57:58 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwZZ5pv7RyUVUt4AkCEvz/EA1pzMoAGKCzms5/djeDikHIYvF5MIMlnnQORP16NLlkZ8VX5zoQlEApwgid2/4Q==", "query"=>"movie Titanic", "commit"=>"Search"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError ({:title=>nil, :year=>nil, :plot=>nil, :genre=>nil, :poster=>nil, :rating=>nil, :director=>nil}):
+  
+app/controllers/movie_controller.rb:5:in `show'
+Started GET "/" for 127.0.0.1 at 2019-03-19 11:01:15 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:01:23 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZzYVXOC8PZC/KJKRDLcPQ1kwP9xQZxf05j4grGJhXXuALMqVbNRyh/OdDHXTQYPHPnaVFeK0t3epBRBrHN+aog==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (288.3ms)
+Completed 500 Internal Server Error in 324ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `movie' for #<#<Class:0x00007f8823fefdf0>:0x00007f8823fee3b0>
+Did you mean?  @movie):
+    1: <div class="container">
+    2:   <div class="jumbotron" >
+    3:     <h1>Movie</h1>
+    4:     <%= raise movie.inspect %>
+    5:     <p><%= @movie[:title] %></p>
+    6:     <p><%= @movie[:year] %></p>
+    7:     <p><%= @movie[:plot] %></p>
+  
+app/views/movie/show.html.erb:4:in `_app_views_movie_show_html_erb__2449316987309775029_70111364907760'

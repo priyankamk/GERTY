@@ -11,9 +11,9 @@
   <body>
     <div class="container">
       <h1 class="display-1 text-center">Gerty</h1>
-      <%= form_tag '/giphy/show' do %>
+      <%= form_tag '/movie/show' do %>
         <div class="input-group mb-3">
-          <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy / weather"%>
+          <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy / weather / movie"%>
           <div class="input-group-append">
             <%= submit_tag 'Search', class:"btn btn-outline-light",id:"button-addon2" %>
           </div>

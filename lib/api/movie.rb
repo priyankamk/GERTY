@@ -2,16 +2,8 @@ require 'httparty'
 module Api
   class Movie
     def fetch(query:)
-      # raise response.inspect
-      # response = HTTParty.get("http://www.omdbapi.com/?s=#{query}&page=2&apikey=2f6435d9")
-      # response['Search'].map do |movie|
-      #   {
-      #     'Title': movie['Title'],
-      #     'Year': movie['Year']
-      #   }
-      # end
-      
-      response = HTTParty.get("http://www.omdbapi.com/?t=#{query}&apikey=2f6435d9")
+      movie_name = query.split(" ")[1]
+      response = HTTParty.get("http://www.omdbapi.com/?t=#{movie_name}&apikey=2f6435d9")
       {
         title: response["Title"],
         year: response["Year"],
@@ -19,7 +11,9 @@ module Api
         genre: response["Genre"],
         poster: response["Poster"],
         rating: response["imdbRating"],
-        director: response["Director"]
+        director: response["Director"],
+        released: response["Released"],
+        actors: response["Actors"]
       }
     end
   end

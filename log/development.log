@@ -4316,3 +4316,474 @@ Did you mean?  @movie):
     7:     <p><%= @movie[:plot] %></p>
   
 app/views/movie/show.html.erb:4:in `_app_views_movie_show_html_erb__2449316987309775029_70111364907760'
+Started GET "/" for 127.0.0.1 at 2019-03-19 11:17:35 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 589ms (Views: 569.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:17:40 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NZjeJxdBnix3nYZ+5HEaW/H2iWwAxolFMSGfNjZ/Aq/SggHumynROzsoGJo7h5bflrAjpbIVKcZ+Gq/xSMHFdg==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (239.3ms)
+Completed 500 Internal Server Error in 1194ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `movie' for #<#<Class:0x00007fe398e1a478>:0x00007fe398e18a60>
+Did you mean?  @movie):
+    1: <div class="container">
+    2:   <div class="jumbotron" >
+    3:     <h1>Movie</h1>
+    4:     <%= raise movie.inspect %>
+    5:     <p><%= @movie[:title] %></p>
+    6:     <p><%= @movie[:year] %></p>
+    7:     <p><%= @movie[:plot] %></p>
+  
+app/views/movie/show.html.erb:4:in `_app_views_movie_show_html_erb__3926846827980915027_70307749615180'
+Started GET "/" for 127.0.0.1 at 2019-03-19 11:17:59 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 100ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:18:06 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0JjBtE8ekk8vA7S5HGSqWNhE65EHf1LxbQsP+luf2uQ3gh59w3bdWGO2Kl3DkibcvwJBWLWs8nIiMD89JSEdPQ==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 11:18:49 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:18:53 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h/exwc8hdHmoobcSKTujPB+MO1rBUPSmgtgCuKWuiD5g7W4IQ0k7buQUKfb2zS+4eMqRk3ODVCXN4zJ/2xBP5w==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 11:20:35 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 66ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:20:44 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cg2V9Gm1sNHiKJMVhdOdmoXIs9w9L4Lq7odeDaFhxhOVF0o95d3/xq6dDfFaJREe4o4ZFY/8ImmhvG7K398Byg==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 233ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-19 11:22:55 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 399ms (Views: 387.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:23:00 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tftmU4iXs31Rc5mbVwJyLhBzOxrAdNQWLXRe1yLdVjBS4bmaBP/8ah3GB3+I9P6qdzWR03KndJViT24QXGOR6Q==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 514ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:23:59 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yKzw2FFYQ/98yayiVOP5vWhrq66BxlNHX1YWrk+ns9Yvti8R3TAM6DB8MkaLFXU5Dy0BZzMV88QQbSZpMRl0Dw==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:24:53 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bEIR7PFyfYvmBwYHOnQEmiUtjrUe2M4JkCI657QjVSCLWM4lfRoynKqymOPlgogeQmskfKwLborfGQogyp2S+Q==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 86ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:31:20 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RzAqdffXkXZV98MbHyQ52A0277jIuXH1dVjuCzCRym6gKvW8e7/eYRlCXf/A0rVcanBFcXpq0XY6Y97MTi8Ntw==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (key not found: "writer"):
+    27:         </div>
+    28:         <div class="col">
+    29:           <h4>Writer:</h4>
+    30:           <h6> <%= @movie.fetch('writer') %> </h6>
+    31:           <h4>Release Date:</h4>
+    32:           <h6> <%= @movie.fetch('releasedate') %> </h6>
+    33:           <h4>Actors:</h4>
+  
+app/views/movie/show.html.erb:30:in `fetch'
+app/views/movie/show.html.erb:30:in `_app_views_movie_show_html_erb__3666443804658907190_70203910841760'
+Started GET "/movie/show" for 127.0.0.1 at 2019-03-19 11:31:23 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/show"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-19 11:31:28 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:31:32 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1EfYel8S15fzHv0HnbiXo/ZgUuI74w+gMB1aaeNVzZMzXQez03qYgL+rY+NCThsnkSb4K4kwryN/JmqunesKSg==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (key not found: "writer"):
+    27:         </div>
+    28:         <div class="col">
+    29:           <h4>Writer:</h4>
+    30:           <h6> <%= @movie.fetch('writer') %> </h6>
+    31:           <h4>Release Date:</h4>
+    32:           <h6> <%= @movie.fetch('releasedate') %> </h6>
+    33:           <h4>Actors:</h4>
+  
+app/views/movie/show.html.erb:30:in `fetch'
+app/views/movie/show.html.erb:30:in `_app_views_movie_show_html_erb__3666443804658907190_70203950157820'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:40:02 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1EfYel8S15fzHv0HnbiXo/ZgUuI74w+gMB1aaeNVzZMzXQez03qYgL+rY+NCThsnkSb4K4kwryN/JmqunesKSg==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 187ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/%3Cimg%20src=" for 127.0.0.1 at 2019-03-19 11:40:02 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/%3Cimg%20src="):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:41:45 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PyNOJKSO+Ixp0UoXffbcy4qQrAakVw+v4d0Kpx8j50nYOZHtKOa3myVk1POiAFBP7dYGzxaEryyu5jpgYZ0gkA==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 207ms (Views: 168.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/%3Cimg%20src=" for 127.0.0.1 at 2019-03-19 11:41:45 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/%3Cimg%20src="):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:42:35 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lWH35jVnq/2zTQ6PC2RwrUAXuO0WsF2qjUySY83fkqdyeygvuQ/k6v/4kGvUkvwpJ1ESJKRj/SnCd6Kks2FVfg==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 107ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/%3Cimg%20src=" for 127.0.0.1 at 2019-03-19 11:42:35 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/%3Cimg%20src="):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:43:31 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f99PfAfs8NVZGyHQXMs5kBz/piRDcjiNRirjIESnR2iYxZC1i4S/whWuvzSDPbUUe7kM7fGhmA4JEdPnOhmAsQ==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 126ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/%3Cimg%20src=" for 127.0.0.1 at 2019-03-19 11:43:31 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/%3Cimg%20src="):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:44:00 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55znG3JMKMtkz7VHg7rLrFVsnT3sQXGj2SZTcRGxApIAhjjS/iRn3Ch6K6NcTEcoMio39F6S0SCWHWO2bw/FSw==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 91ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/%3Cimg%20src=" for 127.0.0.1 at 2019-03-19 11:44:00 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/%3Cimg%20src="):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:44:33 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c8VCba9SvbwJrJFK4Wf3skZNusnRJTxBI1uPHBVFb2qU352kIzryq0UZD64+kXs2IQsQAGP2nMJsYL/ba/uosw==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 124ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movie/%3Cimg%20src=" for 127.0.0.1 at 2019-03-19 11:44:33 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie/%3Cimg%20src="):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:47:08 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MqDTqZAMiJuJHryUzZqnzHUtaVjhYlPJhZ8L0TGz26vVugxgHGTHjMWrInASbCtIEmvDkVOx80rKpDsWTw0ccg==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 892ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:47:47 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1RQwyKbmI6kxExXTfKtZQPJVk2CPwUGdwuKRioxHKfcyDu8BKo5svn2mizejXdXElRM5qT0S4R6N2aFN8vnuLg==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 94ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:48:31 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4d7fFacTGfQEHecWtcvP3mDen6bC28LWR4aaimGLvDYGxADcK3tW40ioefJqPUNaB5g1b3AIYlUIvapNHzV77w==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:50:05 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EsF+pG2O1jc3/F2eZbfIO5lx3HLiRkrPRpmx3ZpNHFj126Ft4eaZIHtJw3q6QUS//jd2u1CV6kwJooEa5PPbgQ==", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 72ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:51:25 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OmmtycfJd4VvDWkSc+69LN0SisqRYEmwACiPjuJPa0Hdc3IAS6E4kiO49/asGDGoulQgAyOz6TNPE79JnPGsmA==", "query"=>"movie jaws", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 69ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:53:27 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6UbfvrskProZTnNZfjYg01X04JHDs59WKozW2FbfZSQOXAB3N0xxrVX77b2hwKxXMrJKWHFgP9Vlt+YfKGGi/Q==", "query"=>"movie home", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1528ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movie/show" for 127.0.0.1 at 2019-03-19 11:57:10 +1100
+Processing by MovieController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X/Pa/tEi5Krs6kz0tHP09dMg0Fqsq68ZXofZEIb0gCe46QU3XUqrvaBf0hBrhXhxtGZ6kx54D5oRvOnX+EpH/g==", "query"=>"movie avengers", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 497ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+

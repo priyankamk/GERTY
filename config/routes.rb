@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   post 'movie/show'
   post 'weather/show'
   post 'giphy/show'
-  
+
   get 'history/index'
   delete 'history/:id', to: 'history#delete'
+  # resources :history
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

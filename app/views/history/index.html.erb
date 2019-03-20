@@ -2,18 +2,13 @@
   <div class="jumbotron">
     <h1>Search History</h1>
     <% @historys.each do |history| %>
-      <div class="input-group mb-3">
-        <ul class="list-group">
-          <li class="list-group-item list-group-item-light">
-            <%= link_to history.query, controller: "home", action: "index" do %>
-              <%= history.query %>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Delete</button>
-              </div>
-            <% end %>
-          </li>
-        </ul>
-      </div>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-light">
+          <%= link_to history.query, controller: "home", action: "index" %>
+          <%= link_to delete, controller:"history", action: "delete", method: :delete %>
+          <button>Delete</button>
+        </li>
+      </ul>
     <% end %>
   </div>
 </div>

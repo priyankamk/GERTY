@@ -5,9 +5,6 @@ require_relative '../../lib/api/quote'
 
 class HomeController < ApplicationController
 
-  # def new
-  #   @history = History.new
-  # end
   def index
     # Guard Clause
     if params[:query].nil?
@@ -29,23 +26,18 @@ class HomeController < ApplicationController
       @movie = Api::Movie.new.fetch(query: query_req)
     elsif action == "quote"
       @quote = Api::Quote.new.fetch(query: query_req)
-      @color = "%06x" % (rand * 0xffffff)  
+      # @color = "%06x" % (rand * 0xffffff)  
+      r = rand(255).to_s(16)
+      g = rand(255).to_s(16)
+      b = rand(255).to_s(16)
+      r, g, b = [r, g, b].map { |s| if s.size == 1 then '0' + s else s end }
+      @color = r + g + b 
+    elsif action == "news"
+      # raise @news.inspect
+      @news = Api::News.new.fetch(query: query_req)
     end
+
     render "#{action}/show"
   end
 
-  # def create 
-  #   history = History.new
-  #   history.query = params[:query]
-  #   history.save
-
-  #   redirect_to "/"
-  # end
 end
-
-
-# <ul>
-# <li> <a href='/query=giphy+melhourne'> giphy melbourne </a></li>
-# <li> weather melbourne </li>
-# <li> giphy cats </li>
-# </ul>

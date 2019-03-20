@@ -16293,3 +16293,192 @@ Processing by AboutController#index as HTML
 Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-21 09:52:06 +1100
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 711ms (Views: 698.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 09:52:07 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 09:52:42 +1100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 22:52:42.605843"], ["updated_at", "2019-03-20 22:52:42.605843"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 14.0ms)
+
+
+  
+NameError (uninitialized constant Api::News):
+  
+app/controllers/home_controller.rb:34:in `index'
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 09:53:15 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 22:53:15.922062"], ["updated_at", "2019-03-20 22:53:15.922062"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 11.0ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/home_controller.rb:34:in `index'
+Started GET "/history" for 127.0.0.1 at 2019-03-21 09:54:41 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 403ms (Views: 399.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?query=news+brexit" for 127.0.0.1 at 2019-03-21 09:54:47 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"query"=>"news brexit"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (2.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 22:54:47.152084"], ["updated_at", "2019-03-20 22:54:47.152084"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.7ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/home_controller.rb:34:in `index'
+Started GET "/history" for 127.0.0.1 at 2019-03-21 09:54:55 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 80ms (Views: 74.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+lady+gaga&commit=Search" for 127.0.0.1 at 2019-03-21 09:55:11 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news lady gaga", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-20 22:55:11.630673"], ["updated_at", "2019-03-20 22:55:11.630673"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.6ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/home_controller.rb:34:in `index'
+Started GET "/?utf8=%E2%9C%93&query=news+lady+gaga&commit=Search" for 127.0.0.1 at 2019-03-21 10:00:28 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news lady gaga", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (2.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-20 23:00:28.399451"], ["updated_at", "2019-03-20 23:00:28.399451"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 4.4ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/home_controller.rb:34:in `index'
+Started GET "/?utf8=%E2%9C%93&query=news+lady+gaga&commit=Search" for 127.0.0.1 at 2019-03-21 10:00:32 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news lady gaga", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (1.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-20 23:00:32.201652"], ["updated_at", "2019-03-20 23:00:32.201652"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.6ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/home_controller.rb:34:in `index'
+Started GET "/" for 127.0.0.1 at 2019-03-21 10:02:54 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 10:02:56 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 10:02:57 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 93ms (Views: 85.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/?query=news+lady+gaga" for 127.0.0.1 at 2019-03-21 10:05:17 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"query"=>"news lady gaga"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (1.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-20 23:05:17.853549"], ["updated_at", "2019-03-20 23:05:17.853549"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 8.6ms)
+
+
+  
+RuntimeError (nil):
+  
+app/controllers/home_controller.rb:34:in `index'
+Started GET "/?query=news+lady+gaga" for 127.0.0.1 at 2019-03-21 10:09:08 +1100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"query"=>"news lady gaga"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:19
+  [1m[36mHistory Create (1.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-20 23:09:08.602369"], ["updated_at", "2019-03-20 23:09:08.602369"]]
+  ↳ app/controllers/home_controller.rb:19
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:19
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 13.5ms)
+
+
+  
+NameError (uninitialized constant Api::News):
+  
+app/controllers/home_controller.rb:35:in `index'

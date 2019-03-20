@@ -9,4 +9,10 @@ class HistoryController < ApplicationController
 
     redirect_to history_index_path
   end
+
+  def clear 
+    History.delete_all
+
+    redirect_to history_index_path
+  end
 end

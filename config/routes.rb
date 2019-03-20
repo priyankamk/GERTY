@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   post 'movie/show'
   post 'weather/show'
   post 'giphy/show'
+  post 'history/clear'
   resources :history, only: [:index, :destroy]
 end

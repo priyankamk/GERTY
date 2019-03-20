@@ -1,12 +1,14 @@
 class HistoryController < ApplicationController
   def index
-    @historys = History.all
+    # Plural of History is history
+    @history = History.all
   end
 
-  def destory
-    d = History.find(params[:query])
-    d.destory
+  # Spelling of destory is destroy
+  def destroy
+    d = History.find(params[:id])
+    d.destroy
 
-    redirect_to "/history/index"
+    redirect_to history_index_path
   end
 end

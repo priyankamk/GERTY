@@ -1,12 +1,11 @@
 <div class="container">
   <div class="jumbotron">
     <h1>Search History</h1>
-    <% @historys.each do |history| %>
+    <% @history.each do |history| %>
       <ul class="list-group">
         <li class="list-group-item list-group-item-light">
           <%= link_to history.query, controller: "home", action: "index" %>
-          <%= link_to delete, controller:"history", action: "delete", method: :delete %>
-          <button>Delete</button>
+          <%= link_to 'Delete', {controller:"history", action: "destroy", id: history.id}, method: :delete, class: 'btn btn-danger'%>
         </li>
       </ul>
     <% end %>

@@ -8,16 +8,11 @@ class HomeController < ApplicationController
   # def new
   #   @history = History.new
   # end
-
-  def create 
-    history = History.new
-    history.query = params[:history][:query]
-    history.save
-
-    redirect_to "/"
-  end
-
   def index
+    history = History.new
+    history.query = params[:query]
+    history.save!
+
     if params[:query].nil?
       render 'index' and return
     end
@@ -36,6 +31,14 @@ class HomeController < ApplicationController
     end
     render "#{action}/show"
   end
+
+  # def create 
+  #   history = History.new
+  #   history.query = params[:query]
+  #   history.save
+
+  #   redirect_to "/"
+  # end
 end
 
 

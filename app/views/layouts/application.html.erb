@@ -10,17 +10,19 @@
   </head>
   <body>
     <div>
-      <nav class="container d-flex justify-content-between mt-1">
+      <nav class="container d-flex justify-content-between mt-2">
         <a href="/about/index">
           <img src="https://static.thenounproject.com/png/227875-200.png" alt="" height="50" width="50">
         </a>
+        <h1 class="display-1 text-center">
+          Gerty
+        </h1>
         <a href="/history/index">
           <img src="https://static.thenounproject.com/png/2186680-200.png" alt="" height="50" width="50">
         </a>
       </nav>
     </div>
     <div class="container">
-      <h1 class="display-1 text-center"> Grety</h1>
       <%= form_tag '/', method: :get do %>
         <div class="input-group mb-3">
           <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy / weather / movie"%>

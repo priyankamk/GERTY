@@ -7060,3 +7060,470 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:14:08 +1100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 730ms (Views: 718.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-20 11:14:25 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 422ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+Melbourne&commit=Search" for 127.0.0.1 at 2019-03-20 11:14:55 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4076ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+Melbourne&commit=Search" for 127.0.0.1 at 2019-03-20 11:23:39 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather Melbourne", "commit"=>"Search"}
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3647ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:23:43 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:24:44 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:30:59 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 11:36:25 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:36:26 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 11:36:27 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (20.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 113ms (Views: 76.4ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:36:29 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:48:58 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (9.6ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 00:48:59.147517"], ["updated_at", "2019-03-20 00:48:59.147517"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 324ms (Views: 253.2ms | ActiveRecord: 35.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 11:49:44 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (13.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (65.0ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 13.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `params' for #<History:0x00007fafddc74298>):
+    2:   <div class="jumbotron">
+    3:     <h1>History</h1>
+    4:     <% @historys.each do |history| %>
+    5:       <a href="/history/index"> <%= history.params[:query] %> </a>
+    6:     <% end %>
+    7:   </div>
+    8: </div>
+  
+app/views/history/index.html.erb:5:in `block in _app_views_history_index_html_erb__961699951311241458_70196662756900'
+app/views/history/index.html.erb:4:in `_app_views_history_index_html_erb__961699951311241458_70196662756900'
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:49:48 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 00:49:48.591951"], ["updated_at", "2019-03-20 00:49:48.591951"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 87ms (Views: 81.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 11:49:51 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:52:26 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 00:52:26.803371"], ["updated_at", "2019-03-20 00:52:26.803371"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 154ms (Views: 128.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 11:52:32 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 66ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:52:37 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 00:52:37.122764"], ["updated_at", "2019-03-20 00:52:37.122764"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 107ms (Views: 99.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-20 11:52:40 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-20 00:52:40.858586"], ["updated_at", "2019-03-20 00:52:40.858586"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 366ms (Views: 40.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 11:53:23 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.3ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 00:53:23.144366"], ["updated_at", "2019-03-20 00:53:23.144366"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 40.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 11:53:38 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+happy&commit=Search" for 127.0.0.1 at 2019-03-20 12:00:31 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote happy", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote happy"], ["created_at", "2019-03-20 01:00:31.832953"], ["updated_at", "2019-03-20 01:00:31.832953"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11299ms (Views: 125.9ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+water&commit=Search" for 127.0.0.1 at 2019-03-20 12:02:21 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote water", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote water"], ["created_at", "2019-03-20 01:02:21.935090"], ["updated_at", "2019-03-20 01:02:21.935090"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9017ms (Views: 64.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+motivation&commit=Search" for 127.0.0.1 at 2019-03-20 12:04:38 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote motivation", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote motivation"], ["created_at", "2019-03-20 01:04:38.134544"], ["updated_at", "2019-03-20 01:04:38.134544"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9053ms (Views: 105.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+happy&commit=Search" for 127.0.0.1 at 2019-03-20 12:09:25 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote happy", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote happy"], ["created_at", "2019-03-20 01:09:25.817153"], ["updated_at", "2019-03-20 01:09:25.817153"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9731ms (Views: 141.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:03 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 45.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:06 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 44.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:08 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (3.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 51ms (Views: 44.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:08 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 72ms (Views: 67.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:09 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (3.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 57ms (Views: 50.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:10 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:12 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (4.7ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 56ms (Views: 48.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:13 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:13 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (2.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:14 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (2.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:10:14 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (3.1ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 65ms (Views: 58.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:11:26 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:11:39 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.1ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:12:09 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 68ms (Views: 63.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 12:12:21 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:12:23 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (11.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 63ms (Views: 47.9ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:12:28 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (5.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 78ms (Views: 68.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+love&commit=Search" for 127.0.0.1 at 2019-03-20 12:12:40 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote love", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote love"], ["created_at", "2019-03-20 01:12:40.571781"], ["updated_at", "2019-03-20 01:12:40.571781"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9263ms (Views: 33.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:13:04 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 12:13:39 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 60ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 12:20:06 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 134ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:20:10 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 52ms (Views: 40.0ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:20:41 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 52.7ms | ActiveRecord: 0.5ms)
+
+

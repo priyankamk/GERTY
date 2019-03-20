@@ -1,8 +1,22 @@
 require_relative '../../lib/api/weather'
 require_relative '../../lib/api/giphy'
 require_relative '../../lib/api/movie'
+require_relative '../../lib/api/quote'
 
 class HomeController < ApplicationController
+
+  # def new
+  #   @history = History.new
+  # end
+
+  def create 
+    history = History.new
+    history.query = params[:history][:query]
+    history.save
+
+    redirect_to "/"
+  end
+
   def index
     if params[:query].nil?
       render 'index' and return
@@ -17,6 +31,8 @@ class HomeController < ApplicationController
       @giphies = Api::Giphy.new.fetch(query: query_req)
     elsif action == "movie"
       @movie = Api::Movie.new.fetch(query: query_req)
+    elsif action == "quote"
+      @quote = Api::Quote.new.fetch(query: query_req)
     end
     render "#{action}/show"
   end

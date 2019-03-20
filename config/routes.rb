@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about/index'
+  get 'history/index'
   post 'quote/show'
   post 'movie/show'
   post 'weather/show'

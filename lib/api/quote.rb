@@ -3,11 +3,14 @@ require 'httparty'
 module Api
   class Quote
     def fetch(query:)
-      response = HTTParty.get("https://thesimpsonsquoteapi.glitch.me/quotes?count=1")
+      response = HTTParty.get(
+        "http://quotes.rest/quote/search?minlength=100&maxlength=300&query=#{query}&private=false",
+        headers: {
+          'X-TheySaidSo-Api-Secret': '3_BkOSsR9g7E8Ys3zEa6_QeF'
+        })
       return {
-        quote: response["quote"],
-        charater: response["character"],
-        image: response["image"]
+        quote: response["contents"]["quote"],
+        author: response["contents"]["author"]
       }
     end
   end

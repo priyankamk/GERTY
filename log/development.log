@@ -16482,3 +16482,160 @@ Completed 500 Internal Server Error in 44ms (ActiveRecord: 13.5ms)
 NameError (uninitialized constant Api::News):
   
 app/controllers/home_controller.rb:35:in `index'
+Started GET "/?query=news+lady+gaga" for 127.0.0.1 at 2019-03-21 10:15:25 +1100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"query"=>"news lady gaga"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:16
+  [1m[36mHistory Create (2.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-20 23:15:26.179178"], ["updated_at", "2019-03-20 23:15:26.179178"]]
+  ↳ app/controllers/home_controller.rb:16
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:16
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 17.0ms)
+
+
+  
+NameError (uninitialized constant Api::News):
+  
+app/controllers/home_controller.rb:37:in `index'
+Started GET "/" for 127.0.0.1 at 2019-03-21 10:25:34 +1100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 527ms (Views: 512.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:25:39 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:16
+  [1m[36mHistory Create (1.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:25:39.383636"], ["updated_at", "2019-03-20 23:25:39.383636"]]
+  ↳ app/controllers/home_controller.rb:16
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:16
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 20.9ms)
+
+
+  
+NameError (uninitialized constant Api::News):
+  
+app/controllers/home_controller.rb:37:in `index'
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:34:02 +1100
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (2.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:34:02.420024"], ["updated_at", "2019-03-20 23:34:02.420024"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2436ms (Views: 403.3ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:41:27 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (10.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:41:27.729374"], ["updated_at", "2019-03-20 23:41:27.729374"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1708ms (Views: 74.7ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:43:59 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:43:59.678046"], ["updated_at", "2019-03-20 23:43:59.678046"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1318ms (Views: 88.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:44:25 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (1.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:44:25.444665"], ["updated_at", "2019-03-20 23:44:25.444665"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1511ms (Views: 40.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+lady+gaga&commit=Search" for 127.0.0.1 at 2019-03-21 10:45:04 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news lady gaga", "commit"=>"Search"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (5.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-20 23:45:04.421451"], ["updated_at", "2019-03-20 23:45:04.421451"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1395ms (Views: 57.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+selena+gomez&commit=Search" for 127.0.0.1 at 2019-03-21 10:45:33 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news selena gomez", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (3.1ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news selena gomez"], ["created_at", "2019-03-20 23:45:33.389068"], ["updated_at", "2019-03-20 23:45:33.389068"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1441ms (Views: 52.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:45:59 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:45:59.007952"], ["updated_at", "2019-03-20 23:45:59.007952"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1320ms (Views: 51.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:46:46 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:46:46.909116"], ["updated_at", "2019-03-20 23:46:46.909116"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1433ms (Views: 40.1ms | ActiveRecord: 2.6ms)
+
+

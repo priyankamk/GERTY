@@ -2,6 +2,7 @@ require_relative '../../lib/api/weather'
 require_relative '../../lib/api/giphy'
 require_relative '../../lib/api/movie'
 require_relative '../../lib/api/quote'
+require_relative '../../lib/api/news'
 
 class HomeController < ApplicationController
 
@@ -33,8 +34,9 @@ class HomeController < ApplicationController
       r, g, b = [r, g, b].map { |s| if s.size == 1 then '0' + s else s end }
       @color = r + g + b 
     elsif action == "news"
-      # raise @news.inspect
+      
       @news = Api::News.new.fetch(query: query_req)
+      # raise @news.inspect
     end
 
     render "#{action}/show"

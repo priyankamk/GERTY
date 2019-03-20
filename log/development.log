@@ -16639,3 +16639,247 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 1433ms (Views: 40.1ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/history" for 127.0.0.1 at 2019-03-21 10:48:51 +1100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 479ms (Views: 447.1ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+global+warming&commit=Search" for 127.0.0.1 at 2019-03-21 10:49:09 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news global warming", "commit"=>"Search"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (2.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news global warming"], ["created_at", "2019-03-20 23:49:09.268490"], ["updated_at", "2019-03-20 23:49:09.268490"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2656ms (Views: 52.2ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+donald+trump&commit=Search" for 127.0.0.1 at 2019-03-21 10:49:48 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news donald trump", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (2.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news donald trump"], ["created_at", "2019-03-20 23:49:48.454106"], ["updated_at", "2019-03-20 23:49:48.454106"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1483ms (Views: 77.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+happy&commit=Search" for 127.0.0.1 at 2019-03-21 10:50:11 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote happy", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote happy"], ["created_at", "2019-03-20 23:50:11.169778"], ["updated_at", "2019-03-20 23:50:11.169778"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10100ms (Views: 75.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-21 10:50:25 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 23:50:25.828559"], ["updated_at", "2019-03-20 23:50:25.828559"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 574ms (Views: 81.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 10:50:32 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (1.1ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-20 23:50:32.311317"], ["updated_at", "2019-03-20 23:50:32.311317"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 992ms (Views: 98.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+avengers&commit=Search" for 127.0.0.1 at 2019-03-21 10:50:44 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie avengers", "commit"=>"Search"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie avengers"], ["created_at", "2019-03-20 23:50:44.762920"], ["updated_at", "2019-03-20 23:50:44.762920"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 546ms (Views: 38.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 10:50:56 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.9ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 71ms (Views: 64.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 10:51:07 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 10:51:24 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 10:51:30 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (1.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-20 23:51:30.057732"], ["updated_at", "2019-03-20 23:51:30.057732"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1538ms (Views: 47.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+election&commit=Search" for 127.0.0.1 at 2019-03-21 10:52:11 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news election", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news election"], ["created_at", "2019-03-20 23:52:11.619603"], ["updated_at", "2019-03-20 23:52:11.619603"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1534ms (Views: 36.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+australian+election&commit=Search" for 127.0.0.1 at 2019-03-21 10:53:23 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news australian election", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (4.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news australian election"], ["created_at", "2019-03-20 23:53:23.455290"], ["updated_at", "2019-03-20 23:53:23.455290"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (27.2ms)
+Completed 500 Internal Server Error in 1517ms (ActiveRecord: 10.8ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+     9:           <p class="card-text"><%= news[:description] %></p>
+    10:           <p class="card-text"><%= link_to 'Read More', news[:url] %></p>
+    11:         </div>
+    12:         <%= image_tag news[:urlToImage], class:"card-img-top" %>
+    13:       </div>
+    14:     <% end %>
+    15:   </div>
+  
+app/views/news/show.html.erb:12:in `block in _app_views_news_show_html_erb___1636372377537511651_70215471042860'
+app/views/news/show.html.erb:4:in `map'
+app/views/news/show.html.erb:4:in `_app_views_news_show_html_erb___1636372377537511651_70215471042860'
+app/controllers/home_controller.rb:42:in `index'
+Started GET "/?utf8=%E2%9C%93&query=news+aus+election&commit=Search" for 127.0.0.1 at 2019-03-21 10:53:36 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news aus election", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news aus election"], ["created_at", "2019-03-20 23:53:36.535658"], ["updated_at", "2019-03-20 23:53:36.535658"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 1490ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+     9:           <p class="card-text"><%= news[:description] %></p>
+    10:           <p class="card-text"><%= link_to 'Read More', news[:url] %></p>
+    11:         </div>
+    12:         <%= image_tag news[:urlToImage], class:"card-img-top" %>
+    13:       </div>
+    14:     <% end %>
+    15:   </div>
+  
+app/views/news/show.html.erb:12:in `block in _app_views_news_show_html_erb___1636372377537511651_70215449955720'
+app/views/news/show.html.erb:4:in `map'
+app/views/news/show.html.erb:4:in `_app_views_news_show_html_erb___1636372377537511651_70215449955720'
+app/controllers/home_controller.rb:42:in `index'
+Started GET "/?utf8=%E2%9C%93&query=news+information+technology&commit=Search" for 127.0.0.1 at 2019-03-21 10:54:02 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news information technology", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (1.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news information technology"], ["created_at", "2019-03-20 23:54:02.876389"], ["updated_at", "2019-03-20 23:54:02.876389"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1666ms (Views: 113.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+programming&commit=Search" for 127.0.0.1 at 2019-03-21 10:54:15 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news programming", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:17
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news programming"], ["created_at", "2019-03-20 23:54:15.941447"], ["updated_at", "2019-03-20 23:54:15.941447"]]
+  ↳ app/controllers/home_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:17
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 1431ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+     9:           <p class="card-text"><%= news[:description] %></p>
+    10:           <p class="card-text"><%= link_to 'Read More', news[:url] %></p>
+    11:         </div>
+    12:         <%= image_tag news[:urlToImage], class:"card-img-top" %>
+    13:       </div>
+    14:     <% end %>
+    15:   </div>
+  
+app/views/news/show.html.erb:12:in `block in _app_views_news_show_html_erb___1636372377537511651_70215442183900'
+app/views/news/show.html.erb:4:in `map'
+app/views/news/show.html.erb:4:in `_app_views_news_show_html_erb___1636372377537511651_70215442183900'
+app/controllers/home_controller.rb:42:in `index'

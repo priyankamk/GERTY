@@ -7758,3 +7758,2097 @@ Processing by HistoryController#index as HTML
 Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 12:52:01 +1100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 560ms (Views: 546.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 12:52:04 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:52:06 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (4.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 109ms (Views: 83.2ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 12:52:26 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 12:52:31 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 01:52:31.164960"], ["updated_at", "2019-03-20 01:52:31.164960"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 82ms (Views: 72.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 12:55:31 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 60ms (Views: 54.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+seoul&commit=Search" for 127.0.0.1 at 2019-03-20 12:56:15 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather seoul", "commit"=>"Search"}
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.1ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather seoul"], ["created_at", "2019-03-20 01:56:15.134625"], ["updated_at", "2019-03-20 01:56:15.134625"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4535ms (Views: 28.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+Melbourne&commit=Search" for 127.0.0.1 at 2019-03-20 12:57:02 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather Melbourne", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather Melbourne"], ["created_at", "2019-03-20 01:57:02.477328"], ["updated_at", "2019-03-20 01:57:02.477328"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4268ms (Views: 53.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+canada&commit=Search" for 127.0.0.1 at 2019-03-20 12:57:19 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather canada", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather canada"], ["created_at", "2019-03-20 01:57:19.537813"], ["updated_at", "2019-03-20 01:57:19.537813"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2863ms (Views: 31.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+seoul&commit=Search" for 127.0.0.1 at 2019-03-20 12:57:44 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather seoul", "commit"=>"Search"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather seoul"], ["created_at", "2019-03-20 01:57:44.728512"], ["updated_at", "2019-03-20 01:57:44.728512"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4329ms (Views: 34.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+seoul&commit=Search" for 127.0.0.1 at 2019-03-20 12:58:52 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather seoul", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather seoul"], ["created_at", "2019-03-20 01:58:52.792323"], ["updated_at", "2019-03-20 01:58:52.792323"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3739ms (Views: 53.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+seoul&commit=Search" for 127.0.0.1 at 2019-03-20 12:59:11 +1100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather seoul", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather seoul"], ["created_at", "2019-03-20 01:59:11.728902"], ["updated_at", "2019-03-20 01:59:11.728902"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 3941ms (Views: 343.4ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 12:59:15 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (3.3ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 01:59:15.716859"], ["updated_at", "2019-03-20 01:59:15.716859"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (23.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 75ms (Views: 45.6ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+seoul&commit=Search" for 127.0.0.1 at 2019-03-20 12:59:24 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather seoul", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather seoul"], ["created_at", "2019-03-20 01:59:24.103823"], ["updated_at", "2019-03-20 01:59:24.103823"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3345ms (Views: 33.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+inspiration&commit=Search" for 127.0.0.1 at 2019-03-20 12:59:47 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote inspiration", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote inspiration"], ["created_at", "2019-03-20 01:59:47.855549"], ["updated_at", "2019-03-20 01:59:47.855549"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10043ms (Views: 58.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:00:07 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 48ms (Views: 39.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 13:00:39 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+positive&commit=Search" for 127.0.0.1 at 2019-03-20 13:00:50 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote positive", "commit"=>"Search"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote positive"], ["created_at", "2019-03-20 02:00:50.404284"], ["updated_at", "2019-03-20 02:00:50.404284"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11027ms (Views: 31.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:01:16 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 54.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:01:31 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 13:01:49 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:01:50 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (6.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 70ms (Views: 57.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:01:54 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.1ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 02:01:54.792419"], ["updated_at", "2019-03-20 02:01:54.792419"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 42.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:03:20 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 68ms (Views: 61.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 13:03:28 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 13:07:31 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 113ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:07:32 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 58ms (Views: 54.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:07:34 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:07:36 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (10.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 63ms (Views: 49.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 13:09:51 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:09:53 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history[:query] );@output_bu...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 13:09:57 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:10:04 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history[:query] );@output_bu...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:10:23 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:10:29 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 02:10:29.820873"], ["updated_at", "2019-03-20 02:10:29.820873"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 126ms (Views: 119.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:10:31 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:9: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:11:02 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:11:06 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 02:11:06.421013"], ["updated_at", "2019-03-20 02:11:06.421013"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 67.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:11:07 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:49:55 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (16.1ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 02:49:55.972874"], ["updated_at", "2019-03-20 02:49:55.972874"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 363ms (Views: 313.8ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+of+the+day&commit=Search" for 127.0.0.1 at 2019-03-20 13:50:57 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote of the day", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (13.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote of the day"], ["created_at", "2019-03-20 02:50:57.590632"], ["updated_at", "2019-03-20 02:50:57.590632"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11450ms (Views: 111.1ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 13:51:44 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:51:49 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:57:12 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:57:31 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:57:43 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (3.1ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 02:57:43.641125"], ["updated_at", "2019-03-20 02:57:43.641125"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 74.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:57:45 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/history/index.html.erb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:58:57 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (2.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 62ms (Views: 37.7ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:59:10 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:59:12 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 02:59:12.626096"], ["updated_at", "2019-03-20 02:59:12.626096"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 62.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 13:59:12 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 02:59:12.742127"], ["updated_at", "2019-03-20 02:59:12.742127"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 61.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:59:14 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:59:33 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:59:47 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/history/movie%20jaws" for 127.0.0.1 at 2019-03-20 13:59:48 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/history/movie%20jaws"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 13:59:55 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (3.7ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 73ms (Views: 64.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-20 14:00:29 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-20 03:00:29.275557"], ["updated_at", "2019-03-20 03:00:29.275557"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1159ms (Views: 47.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+Melbourne&commit=Search" for 127.0.0.1 at 2019-03-20 14:00:33 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather Melbourne", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather Melbourne"], ["created_at", "2019-03-20 03:00:33.419745"], ["updated_at", "2019-03-20 03:00:33.419745"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3784ms (Views: 53.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 14:00:42 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=&commit=Search" for 127.0.0.1 at 2019-03-20 14:02:16 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"", "commit"=>"Search"}
+  [1m[35m (7.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", ""], ["created_at", "2019-03-20 03:02:17.034099"], ["updated_at", "2019-03-20 03:02:17.034099"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 10.8ms)
+
+
+  
+ActionView::MissingTemplate (Missing template /show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/priyanka/miniprojects/grety/app/views"
+):
+  
+app/controllers/home_controller.rb:32:in `index'
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 14:02:24 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 69ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:02:34 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:02:34.174746"], ["updated_at", "2019-03-20 03:02:34.174746"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 67ms (Views: 61.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+mario&commit=Search" for 127.0.0.1 at 2019-03-20 14:03:01 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy mario", "commit"=>"Search"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy mario"], ["created_at", "2019-03-20 03:03:01.972460"], ["updated_at", "2019-03-20 03:03:01.972460"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 524ms (Views: 31.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+Melbourne&commit=Search" for 127.0.0.1 at 2019-03-20 14:05:56 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather Melbourne", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather Melbourne"], ["created_at", "2019-03-20 03:05:56.792402"], ["updated_at", "2019-03-20 03:05:56.792402"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 3477ms (Views: 162.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-20 14:06:04 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (5.1ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-20 03:06:04.686099"], ["updated_at", "2019-03-20 03:06:04.686099"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 164ms (Views: 122.6ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+happy&commit=Search" for 127.0.0.1 at 2019-03-20 14:06:34 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote happy", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote happy"], ["created_at", "2019-03-20 03:06:34.589230"], ["updated_at", "2019-03-20 03:06:34.589230"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10635ms (Views: 41.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 14:07:00 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.9ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 65ms (Views: 59.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/history/quote%20love" for 127.0.0.1 at 2019-03-20 14:07:28 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/history/quote%20love"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/history/quote%20love" for 127.0.0.1 at 2019-03-20 14:07:29 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/history/quote%20love"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 14:07:32 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (2.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 67ms (Views: 51.8ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 14:23:48 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 100ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 14:23:50 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...@output_buffer.append=( params: {query: history.query} );@ou...
+...                        ^~~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 14:23:59 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 78ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 14:24:01 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...@output_buffer.append=( params: {query: history.query} );@ou...
+...                        ^~~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:24:33 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (4.4ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:24:33.250328"], ["updated_at", "2019-03-20 03:24:33.250328"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 150ms (Views: 137.8ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 14:24:34 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:24:43 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:24:43.072656"], ["updated_at", "2019-03-20 03:24:43.072656"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 63.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+morning&commit=Search" for 127.0.0.1 at 2019-03-20 14:26:08 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote morning", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote morning"], ["created_at", "2019-03-20 03:26:08.979803"], ["updated_at", "2019-03-20 03:26:08.979803"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10194ms (Views: 165.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+inspiration&commit=Search" for 127.0.0.1 at 2019-03-20 14:27:34 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote inspiration", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote inspiration"], ["created_at", "2019-03-20 03:27:34.564750"], ["updated_at", "2019-03-20 03:27:34.564750"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10636ms (Views: 75.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+calm&commit=Search" for 127.0.0.1 at 2019-03-20 14:28:12 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote calm", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote calm"], ["created_at", "2019-03-20 03:28:12.753353"], ["updated_at", "2019-03-20 03:28:12.753353"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9513ms (Views: 70.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 14:29:00 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/?utf8=%E2%9C%93&query=quote+water&commit=Search" for 127.0.0.1 at 2019-03-20 14:29:01 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote water", "commit"=>"Search"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote water"], ["created_at", "2019-03-20 03:29:01.573812"], ["updated_at", "2019-03-20 03:29:01.573812"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+Started GET "/?utf8=%E2%9C%93&query=quote+calm&commit=Search" for 127.0.0.1 at 2019-03-20 14:29:04 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote calm", "commit"=>"Search"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote calm"], ["created_at", "2019-03-20 03:29:04.855916"], ["updated_at", "2019-03-20 03:29:04.855916"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10595ms (Views: 102.7ms | ActiveRecord: 4.2ms)
+
+
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9097ms (Views: 43.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+water&commit=Search" for 127.0.0.1 at 2019-03-20 14:29:15 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote water", "commit"=>"Search"}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote water"], ["created_at", "2019-03-20 03:29:15.825872"], ["updated_at", "2019-03-20 03:29:15.825872"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8986ms (Views: 32.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 14:30:11 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:05 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.3ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:06.041659"], ["updated_at", "2019-03-20 03:39:06.041659"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 212ms (Views: 201.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:15 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.7ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:15.706782"], ["updated_at", "2019-03-20 03:39:15.706782"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 58.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:17 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:17.044419"], ["updated_at", "2019-03-20 03:39:17.044419"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 50.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:18 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.7ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:18.841661"], ["updated_at", "2019-03-20 03:39:18.841661"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 57.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:21 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:21.262747"], ["updated_at", "2019-03-20 03:39:21.262747"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 51.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:22 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:22.044624"], ["updated_at", "2019-03-20 03:39:22.044624"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 38.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:22 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:22.228840"], ["updated_at", "2019-03-20 03:39:22.228840"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 53.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:22 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:22.588901"], ["updated_at", "2019-03-20 03:39:22.588901"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 36.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 14:39:32 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.3ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 03:39:32.179724"], ["updated_at", "2019-03-20 03:39:32.179724"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 56.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:39:54 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:39:54.489316"], ["updated_at", "2019-03-20 03:39:54.489316"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 145ms (Views: 56.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:41:10 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:41:10.212787"], ["updated_at", "2019-03-20 03:41:10.212787"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 186ms (Views: 108.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:41:19 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:41:19.222885"], ["updated_at", "2019-03-20 03:41:19.222885"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 118ms (Views: 58.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+rainbow+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:41:50 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy rainbow cat", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy rainbow cat"], ["created_at", "2019-03-20 03:41:50.838750"], ["updated_at", "2019-03-20 03:41:50.838750"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 451ms (Views: 70.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:43:16 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:43:16.272453"], ["updated_at", "2019-03-20 03:43:16.272453"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 592ms (Views: 101.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:44:10 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:44:10.390737"], ["updated_at", "2019-03-20 03:44:10.390737"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 174ms (Views: 99.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-20 14:45:20 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-20 03:45:20.096026"], ["updated_at", "2019-03-20 03:45:20.096026"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1232ms (Views: 158.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:45:26 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:45:26.414710"], ["updated_at", "2019-03-20 03:45:26.414710"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 123ms (Views: 37.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:45:58 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:45:58.392100"], ["updated_at", "2019-03-20 03:45:58.392100"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 145ms (Views: 77.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:46:13 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:46:13.965644"], ["updated_at", "2019-03-20 03:46:13.965644"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 171ms (Views: 102.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:46:31 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:46:31.074421"], ["updated_at", "2019-03-20 03:46:31.074421"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 146ms (Views: 70.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:47:11 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:47:11.258249"], ["updated_at", "2019-03-20 03:47:11.258249"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 345ms (Views: 56.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:47:34 +1100
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:47:34.832780"], ["updated_at", "2019-03-20 03:47:34.832780"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 540ms (Views: 420.7ms | ActiveRecord: 26.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:49:17 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:49:17.904965"], ["updated_at", "2019-03-20 03:49:17.904965"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 990ms (Views: 94.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:49:35 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:49:35.636102"], ["updated_at", "2019-03-20 03:49:35.636102"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 165ms (Views: 111.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:49:44 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:49:44.806875"], ["updated_at", "2019-03-20 03:49:44.806875"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 154ms (Views: 74.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:50:49 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (3.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:50:49.465261"], ["updated_at", "2019-03-20 03:50:49.465261"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 42.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:51:16 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:51:16.436861"], ["updated_at", "2019-03-20 03:51:16.436861"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 152ms (Views: 77.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+rainbow+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:51:48 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy rainbow cat", "commit"=>"Search"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy rainbow cat"], ["created_at", "2019-03-20 03:51:48.598965"], ["updated_at", "2019-03-20 03:51:48.598965"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 151ms (Views: 76.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:52:08 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:52:08.678825"], ["updated_at", "2019-03-20 03:52:08.678825"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 153ms (Views: 84.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:52:50 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (5.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:52:50.743403"], ["updated_at", "2019-03-20 03:52:50.743403"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 152ms (Views: 74.6ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:53:08 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:53:08.546832"], ["updated_at", "2019-03-20 03:53:08.546832"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 154ms (Views: 99.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:53:25 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:53:25.254195"], ["updated_at", "2019-03-20 03:53:25.254195"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 155ms (Views: 78.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+dog&commit=Search" for 127.0.0.1 at 2019-03-20 14:53:53 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy dog", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy dog"], ["created_at", "2019-03-20 03:53:53.151797"], ["updated_at", "2019-03-20 03:53:53.151797"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 91ms (Views: 39.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:57:52 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:57:52.012848"], ["updated_at", "2019-03-20 03:57:52.012848"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 180ms (Views: 101.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:58:18 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:58:18.722696"], ["updated_at", "2019-03-20 03:58:18.722696"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 153ms (Views: 80.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:58:46 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:58:46.229776"], ["updated_at", "2019-03-20 03:58:46.229776"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 136ms (Views: 85.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 14:59:22 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 03:59:22.579082"], ["updated_at", "2019-03-20 03:59:22.579082"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 155ms (Views: 79.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:01:38 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:01:38.165261"], ["updated_at", "2019-03-20 04:01:38.165261"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 239ms (Views: 168.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:02:19 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:02:19.056766"], ["updated_at", "2019-03-20 04:02:19.056766"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 138ms (Views: 62.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 15:03:32 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.0ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 04:03:32.567424"], ["updated_at", "2019-03-20 04:03:32.567424"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 140ms (Views: 133.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:03:36 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (4.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:03:36.282879"], ["updated_at", "2019-03-20 04:03:36.282879"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 161ms (Views: 46.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:05:55 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:05:56 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (59.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:05:56.378148"], ["updated_at", "2019-03-20 04:05:56.378148"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 323ms (Views: 114.8ms | ActiveRecord: 68.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:06:15 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:06:15.797829"], ["updated_at", "2019-03-20 04:06:15.797829"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 122ms (Views: 51.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:06:39 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:06:39.804443"], ["updated_at", "2019-03-20 04:06:39.804443"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 157ms (Views: 89.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:06:55 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:06:55.454780"], ["updated_at", "2019-03-20 04:06:55.454780"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 158ms (Views: 90.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:07:48 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (4.1ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:07:48.751185"], ["updated_at", "2019-03-20 04:07:48.751185"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 156ms (Views: 85.8ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:08:22 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:08:39 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (2.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:08:39.811315"], ["updated_at", "2019-03-20 04:08:39.811315"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 126ms (Views: 52.3ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:08:41 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  Rendered history/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+...;@output_buffer.append=( query: history.query );@output_buff...
+...                         ^~~~~~):
+  
+app/views/history/index.html.erb:8: syntax error, unexpected tLABEL
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:08:52 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 86ms (Views: 67.8ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/history/movie%20jaws" for 127.0.0.1 at 2019-03-20 15:08:58 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/history/movie%20jaws"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:09:12 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 72ms (Views: 68.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:15:42 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (2.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 147ms (Views: 135.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:16:26 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 127ms (Views: 122.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:19:05 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 128ms (Views: 110.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:19:06 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 104ms (Views: 99.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:19:07 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 97ms (Views: 92.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-20 15:25:15 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (8.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-20 04:25:15.609865"], ["updated_at", "2019-03-20 04:25:15.609865"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 245ms (Views: 162.8ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 15:25:28 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 119ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 15:27:27 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 121ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:27:38 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 78ms (Views: 49.6ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-20 15:27:40 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 69ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:30:22 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 129ms (Views: 124.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:30:29 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (16.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 138ms (Views: 118.2ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:31:54 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (4.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 91ms (Views: 80.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/history/quote%20programming" for 127.0.0.1 at 2019-03-20 15:31:57 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/history/quote%20programming"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:31:59 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.1ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 59ms (Views: 53.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/history/movie%20jaws" for 127.0.0.1 at 2019-03-20 15:32:10 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/history/movie%20jaws"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:32:12 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 57ms (Views: 51.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:32:14 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 57ms (Views: 51.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/history/quote%20water" for 127.0.0.1 at 2019-03-20 15:35:05 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/history/quote%20water"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/history/index" for 127.0.0.1 at 2019-03-20 15:36:23 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:4
+  Rendered history/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 86ms (Views: 71.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-20 15:37:20 +1100
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:14
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2019-03-20 04:37:20.343600"], ["updated_at", "2019-03-20 04:37:20.343600"]]
+  ↳ app/controllers/home_controller.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 120ms (Views: 84.7ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2019-03-20 15:37:23 +1100
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-03-20 15:37:23 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.2.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (3.9ms)
+  Rendered /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.2.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 38ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-03-20 15:38:09 +1100
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.2.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [13 times] (4.5ms)
+  Rendered /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-5.2.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.2.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 43ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+

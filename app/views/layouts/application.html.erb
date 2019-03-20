@@ -25,7 +25,7 @@
     <div class="container">
       <%= form_tag '/', method: :get do %>
         <div class="input-group mb-3">
-          <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy / weather / movie"%>
+          <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy / weather / movie / quote"%>
           <div class="input-group-append">
             <%= submit_tag 'Search', class:"btn btn-outline-light",id:"button-addon2" %>
           </div>
@@ -33,5 +33,6 @@
       <% end %>
     </div>
     <%= yield %>
+    
   </body>
 </html>

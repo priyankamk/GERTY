@@ -2,16 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.giphy img {
-  height: 500px;
-  width: 500px;
+// .giphy_container {
+ 
+//   // position: relative;
+// }
+
+.giphy_container .gif_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 200px;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  align-content: center;
+  // opacity: 1;
+  // transition: .5s ease;
+  // backface-visibility: hidden;
 }
 
-// .giphy {
-//   height: 600px;
-//   width: 500px;
-//   margin-bottom: 10px;
+// .middle {
+//   transition: .5s ease;
+//   opacity: 0;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   text-align: center;
+// }
+
+// .giphy_container:hover .gif_image  {
+//   opacity: 0.3;
+// }
+
+// .giphy_container:hover .middle {
+//   opacity: 1;
+// }
+
+// .text {
+//   background-color: rgba(255, 14, 30, 0.694);
+//   color: white;
+//   font-size: 16px;
+//   padding: 16px 32px;
+//   border-radius: 10px;
 // }

@@ -1,9 +1,9 @@
 <div class="container">
   <div class="jumbotron">
-    <h3 class="display-3 text-center">Explore Animation GIFs</h3>
-    <div class="giphy">
+    <h3 class="display-3 text-center">Explore Animated GIFs</h3>
+    <div class="giphy_container">
       <% @giphies.each do |giphy| %>
-        <%= image_tag giphy[:original_url] %>
+        <%= image_tag giphy[:original_url], class: "gif_image" %>
       <% end %>
     </div>
   </div>

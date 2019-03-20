@@ -22,7 +22,7 @@ module Api
         "snow" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/snowy-6.svg',
         "sleet" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/snowy-5.svg',
         "wind" =>  '🌬',
-        "fog" =>  'hzttps://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy.svg',
+        "fog" =>  'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy.svg',
         "cloudy" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy.svg',
         "partly-cloudy-day" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy-day-1.svg',
         "partly-cloudy-night" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy-night-3.svg'

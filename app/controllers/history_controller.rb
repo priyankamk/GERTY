@@ -1,10 +1,8 @@
 class HistoryController < ApplicationController
   def index
-    # Plural of History is history
     @history = History.all
   end
 
-  # Spelling of destory is destroy
   def destroy
     d = History.find(params[:id])
     d.destroy

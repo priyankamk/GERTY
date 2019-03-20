@@ -9,17 +9,18 @@ class HomeController < ApplicationController
   #   @history = History.new
   # end
   def index
+    # Guard Clause
+    if params[:query].nil?
+      render 'index' and return
+    end
+    
     history = History.new
     history.query = params[:query]
     history.save!
 
-    if params[:query].nil?
-      render 'index' and return
-    end
-
     query_array = params[:query].split(" ")
     action = query_array.shift #eg: giphy or movie
-    query_req = query_array.join(' ') #eg: avengers or rainbow cats
+    query_req = query_array.join(' ') #eg: avengers or rainbow cats    
     if action == "weather"
       @weather = Api::Weather.new.fetch(query: query_req)
     elsif action == "giphy"
@@ -28,6 +29,7 @@ class HomeController < ApplicationController
       @movie = Api::Movie.new.fetch(query: query_req)
     elsif action == "quote"
       @quote = Api::Quote.new.fetch(query: query_req)
+      @color = "%06x" % (rand * 0xffffff)  
     end
     render "#{action}/show"
   end

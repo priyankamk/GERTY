@@ -4,8 +4,14 @@
     <% @history.each do |history| %>
       <ul class="list-group">
         <li class="list-group-item list-group-item-light">
-          <%= link_to history.query, controller: "home", action: "index" %>
-          <%= link_to 'Delete', {controller:"history", action: "destroy", id: history.id}, method: :delete, class: 'btn btn-danger'%>
+          <div class="row">
+            <div class="col">
+              <%= link_to history.query, controller: 'home', action: 'index', params: {query: history.query} %>
+            </div>
+            <div class="pull-right col-xs-1">
+              <%= link_to 'Delete', history, method: :delete, class: 'btn btn-danger '%>
+            </div>
+          </div>
         </li>
       </ul>
     <% end %>

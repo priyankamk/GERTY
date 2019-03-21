@@ -1,18 +1,14 @@
 <div class="container">
-  <div class="jumbotron">
-    <div class="card-header">
+  <div class="card">
+    <div class="card-header text-center">
       <h2 class="movie-font">List for similar movies:</h2>
     </div>
     <% @movie.each do |movie| %>
-      <div class="row ml-3 mr-1">
-        <ul class ="list-unstyled" >
-          <li>
-            <a href='/movie/detail?imdbID=<%= movie[:imdbID] %>' class="movie-font">
-              <%= movie[:title] %>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class ="list-group list-group-flush" >
+        <li class="list-group-item text-center">
+          <a href='/movie/detail?imdbID=<%= movie[:imdbID] %>' class="grow movie-font"><%= movie[:title] %></a>
+        </li>
+      </ul>
     <%end%>
   </div>
 </div>

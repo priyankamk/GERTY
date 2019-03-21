@@ -1,6 +1,6 @@
 class HistoryController < ApplicationController
   def index
-    @history = History.all
+    @history = History.all.limit(30).order('created_at DESC')
   end
 
   def destroy

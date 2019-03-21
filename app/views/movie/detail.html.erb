@@ -1,31 +1,31 @@
 <div class="container">
-  <div class="jumbotron">
-    <div class="card">
-      <div class="card-header">
-        <h2><%= @movie[:title] %> (<%= @movie[:year] %>)</h2>
-      </div>
-      <div class="card-body">
-        <div class="row ml-1 mr-1">
-          <div class="alert alert-success" role="alert">
-            <p class="h5"><%= @movie[:plot] %></p>
-          </div>
+  <div class="card">
+    <div class="card-header ">
+      <h2><%= @movie[:title] %> (<%= @movie[:year] %>)</h2>
+    </div>
+    <div class="card-body">
+      <div class="row ml-1 mr-1">
+        <div class="alert alert-success" role="alert">
+          <p class="h5"><%= @movie[:plot] %></p>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <%= image_tag @movie[:poster] %>
-          </div>
-          <div class="col">
-            <h4>Director:</h4>
-            <h6> <%= @movie[:director]%> </h6>
-            <h4>Release Date:</h4>
-            <h6> <%= @movie[:released] %> </h6>
-            <h4>Actors:</h4>
-            <h6> <%= @movie[:actors] %> </h6>
-            <h4>Genre:</h4>
-            <h6> <%= @movie[:genre]%> </h6>
-            <h4>Ratings:</h4>
-            <h6> <%= @movie[:rating]%> %</h6>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag @movie[:poster] %>
+        </div>
+        <div class="col">
+          <h4>Director:</h4>
+          <h6> <%= @movie[:director]%> </h6>
+          <h4>Release Date:</h4>
+          <h6> <%= @movie[:released] %> </h6>
+          <h4>Actors:</h4>
+          <h6> <%= @movie[:actors] %> </h6>
+          <h4>Genre:</h4>
+          <h6> <%= @movie[:genre]%> </h6>
+          <h4>Runtime:</h4>
+          <h6><%= @movie[:runtime]%></h6>
+          <h4>Ratings:</h4>
+          <h6> <%= @movie[:rating]%> %</h6>
         </div>
       </div>
     </div>

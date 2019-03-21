@@ -1,27 +1,27 @@
 <div class="container">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col">
-        <h1 class="history_font">Search History</h1>
-      </div>
-      <div class="pull-right col-xs-1">
-        <%= link_to "Clear History", history_clear_path, method: "post", class: "btn btn-danger"%>
+  <div class="card mb-1">
+    <div class="card-header ">
+      <div class="row">
+        <div class="col">
+          <h1 class="history_font">Search History</h1>
+        </div>
+        <div class="pull-right col-xs-1 mt-2">
+          <%= link_to "Clear History", history_clear_path, method: "post", class: "btn btn-danger"%>
+        </div>
       </div>
     </div>
-    <br>
-    <% @history.each do |history| %>
-      <ul class="list-group">
-        <li class="list-group-item list-group-item-light">
-          <div class="row">
-            <div class="col">
-              <%= link_to history.query, controller: 'home', action: 'index', params: {query: history.query}, class: "history_font" %>
-            </div>
-            <div class="pull-right col-xs-1">
-              <%= link_to 'Delete', history, method: :delete, class: 'btn btn-outline-danger' %>
-            </div>
-          </div>
-        </li>
-      </ul>
-    <% end %>
   </div>
-</div>
+  <% @history.each do |history| %>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-light">
+        <div class="row">
+          <div class="col">
+            <%= link_to history.query, controller: 'home', action: 'index', params: {query: history.query}, class: 'grow history_font list-group-item list-group-item-action mt-2' %>
+          </div>
+          <div class="pull-right col-xs-1">
+            <%= link_to 'Delete', history, method: :delete, class: 'btn btn-outline-danger' %>
+          </div>
+        </div>
+      </li>
+    </ul>
+  <% end %>

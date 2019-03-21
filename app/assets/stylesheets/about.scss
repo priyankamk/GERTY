@@ -4,3 +4,29 @@
 .about-font{
   font-family: 'Philosopher', sans-serif;
 }
+
+.links img {
+  width: 30px;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links_to_api {
+  list-style-type: none;
+  margin: 0;
+  // color: rgb(255, 94, 0);
+  padding: 0;
+  text-decoration: none;
+}
+
+.heart {
+  width: 30px;
+}
+a:hover {
+  color: rgb(255, 0, 98);
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1);}

@@ -1,4 +1,4 @@
-# GERTY
+# [GERTY](https://gerty-app-5.herokuapp.com/)
 
 ## Technologies Used
 - HTML & CSS

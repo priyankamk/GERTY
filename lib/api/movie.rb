@@ -1,8 +1,9 @@
 require 'httparty'
+# require_relative 'movie_list'
 module Api
   class Movie
     def fetch(query:)
-      # movie_name = query.split(" ")[1]
+      # listOfMovie = Api::MovieList.new.fetch(query: query)
       response = HTTParty.get("http://www.omdbapi.com/?i=#{query}&apikey=2f6435d9")
       return {
         title: response["Title"],
@@ -13,7 +14,8 @@ module Api
         rating: response["imdbRating"],
         director: response["Director"],
         released: response["Released"],
-        actors: response["Actors"]
+        actors: response["Actors"],
+        runtime: response["Runtime"]
       }
     end
   end

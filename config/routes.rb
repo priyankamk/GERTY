@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get '/', to: 'home#index'
   get 'about/index'
-  get 'movie/index'
-  
+  get 'movie/detail'
+
   post 'quote/show'
   post 'movie/show'
   post 'weather/show'

@@ -26,6 +26,7 @@ class HomeController < ApplicationController
       @giphies = Api::Giphy.new.fetch(query: query_req)
     elsif action == "movie"
       @movie = Api::MovieList.new.fetch(query: query_req)
+      # raise @movie.inspect
     elsif action == "quote"
       @quote = Api::Quote.new.fetch(query: query_req)
       # @color = "%06x" % (rand * 0xffffff)  

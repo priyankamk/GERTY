@@ -18474,3 +18474,1754 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 149ms (Views: 111.1ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 14:03:16 +1100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-21 03:03:16.481099"], ["updated_at", "2019-03-21 03:03:16.481099"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 737ms (Views: 644.9ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 14:15:56 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-21 03:15:56.614924"], ["updated_at", "2019-03-21 03:15:56.614924"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 541ms (Views: 436.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/gerty5_new.png" for 127.0.0.1 at 2019-03-21 14:15:57 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/gerty5_new.png"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 14:16:18 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-21 03:16:18.328135"], ["updated_at", "2019-03-21 03:16:18.328135"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (bad URI(is not URI?): gerty5_new 2.png):
+     6:     <%= csp_meta_tag %>
+     7:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     8:     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    12:   </head>
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__373310544424591121_70248307889180'
+app/controllers/home_controller.rb:43:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 14:16:42 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-21 03:16:42.136696"], ["updated_at", "2019-03-21 03:16:42.136696"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 136ms (Views: 97.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/gerty5_new.png" for 127.0.0.1 at 2019-03-21 14:16:42 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/gerty5_new.png"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:16:48 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 14:16:49 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:16:51 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 78ms (Views: 67.1ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:17:29 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 95ms (Views: 89.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gerty5_new.png" for 127.0.0.1 at 2019-03-21 14:17:30 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/gerty5_new.png"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:17:35 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gerty5_new.png" for 127.0.0.1 at 2019-03-21 14:17:35 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/gerty5_new.png"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:17:37 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:17:47 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:18:01 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gerty5_new.png" for 127.0.0.1 at 2019-03-21 14:18:01 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/gerty5_new.png"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:18:09 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:18:24 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 108ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:18:25 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:18:34 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:18:42 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gerty5_new.png" for 127.0.0.1 at 2019-03-21 14:18:42 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/gerty5_new.png"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:18:49 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:19:03 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:19:10 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+Melbourne&commit=Search" for 127.0.0.1 at 2019-03-21 14:19:37 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather Melbourne", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather Melbourne"], ["created_at", "2019-03-21 03:19:37.456896"], ["updated_at", "2019-03-21 03:19:37.456896"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3821ms (Views: 47.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-21 14:19:45 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-21 03:19:45.630216"], ["updated_at", "2019-03-21 03:19:45.630216"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 140ms (Views: 49.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+happy&commit=Search" for 127.0.0.1 at 2019-03-21 14:19:55 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote happy", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote happy"], ["created_at", "2019-03-21 03:19:55.781792"], ["updated_at", "2019-03-21 03:19:55.781792"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10303ms (Views: 75.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 14:20:19 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-21 03:20:19.818686"], ["updated_at", "2019-03-21 03:20:19.818686"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 94ms (Views: 54.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 14:21:15 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-21 03:21:16.095236"], ["updated_at", "2019-03-21 03:21:16.095236"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 123ms (Views: 55.0ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:21:18 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 73ms (Views: 67.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:21:32 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=weather+chennai&commit=Search" for 127.0.0.1 at 2019-03-21 14:21:39 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"weather chennai", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (3.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "weather chennai"], ["created_at", "2019-03-21 03:21:39.594661"], ["updated_at", "2019-03-21 03:21:39.594661"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2967ms (Views: 59.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 14:21:52 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-21 03:21:52.332303"], ["updated_at", "2019-03-21 03:21:52.332303"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2080ms (Views: 69.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 14:22:05 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-21 03:22:05.276335"], ["updated_at", "2019-03-21 03:22:05.276335"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1459ms (Views: 66.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:22:14 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:22:14.928123"], ["updated_at", "2019-03-21 03:22:14.928123"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 266ms (Views: 46.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+cat&commit=Search" for 127.0.0.1 at 2019-03-21 14:22:24 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy cat", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy cat"], ["created_at", "2019-03-21 03:22:24.311393"], ["updated_at", "2019-03-21 03:22:24.311393"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 136ms (Views: 51.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:22:28 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:22:40 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:28:14 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 271ms (Views: 257.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:15 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (25.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (85.2ms)
+Completed 200 OK in 158ms (Views: 124.9ms | ActiveRecord: 25.0ms)
+
+
+Started DELETE "/history/250" for 127.0.0.1 at 2019-03-21 14:28:19 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rYuNoX8f2OhEdJt4F3QmCZP5pgU/utvKAyc64eeyf/9KkVJo83eX/wjBBZzIgqqN9L8MzI1pe0lMHAommQy4Jg==", "id"=>"250"}
+  [1m[36mHistory Load (0.7ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 250], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (1.0ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 250]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 19ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:19 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 84ms (Views: 78.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/history/251" for 127.0.0.1 at 2019-03-21 14:28:20 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"56+qnpsqS8mfFwCgH1KgUIAoX0QJJkp1TABb3gT+OxwAtXVXF0IE3tOinkTApCzU5271jbv16vYDO2sZekD8xQ==", "id"=>"251"}
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 251], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (1.3ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 251]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:20 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.7ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 84ms (Views: 80.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/history/252" for 127.0.0.1 at 2019-03-21 14:28:20 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z+ct8z86JVpNEr0tbde/P6q96slyfmZNme5NojshBduA/fI6s1JqTQGnI8myITO7zftAAMCtxs7W1X1lRZ/CAg==", "id"=>"252"}
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 252], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (0.4ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 252]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:20 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (5.0ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 70ms (Views: 61.7ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/history/253" for 127.0.0.1 at 2019-03-21 14:28:20 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bTkCctnuoKEovXi8/O64kC52Ww66LdbxDpN99SRVfJqKI927VYbvtmQI5lgjGDQUSTDxxwj+dnJBqE0yWuu7Qw==", "id"=>"253"}
+  [1m[36mHistory Load (0.7ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 253], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (0.6ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 253]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:20 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 63ms (Views: 59.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/history/254" for 127.0.0.1 at 2019-03-21 14:28:21 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qSRJx65GYAWHvgNp9AnIbBZ+5xFH7wsCtKzSXGu/h7JOPpYOIi4vEssLnY0r/0TocThN2PU8q4H7l+KbFQFAaw==", "id"=>"254"}
+  [1m[36mHistory Load (0.3ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 254], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (7.2ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 254]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 11ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:21 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 74ms (Views: 69.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/history/255" for 127.0.0.1 at 2019-03-21 14:28:21 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PD2sJeYPytfLiS25wKZFbzEEo+IlmC6ZtrgJFXK4WqjbJ3PsameFwIc8s10fUMnrVkIJK5dLjhr5gznSDAadcQ==", "id"=>"255"}
+  [1m[36mHistory Load (0.6ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 255], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (0.5ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 255]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 6ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:21 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (2.1ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 68ms (Views: 63.0ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/history/256" for 127.0.0.1 at 2019-03-21 14:28:22 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ViwoH8BM6brHJ5y8iYsU9SqaMEhnZwTizCY7hc5RnW6xNvfWTCSmrYuSAlhWfZhxTdyagdW0pGGDHQtCsO9atw==", "id"=>"256"}
+  [1m[36mHistory Load (1.2ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 256], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (1.9ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 256]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 9ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:22 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 89ms (Views: 84.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/history/257" for 127.0.0.1 at 2019-03-21 14:28:23 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hQbznkXJpdaGC8tk4ZMT6ugN80kZ4XN1fDq00xO+JyJiHCxXyaHqwcq+VYA+ZZ9uj0tZgKsy0/YzAYQUbQDg+w==", "id"=>"257"}
+  [1m[36mHistory Load (0.7ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 257], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (0.8ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 257]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:23 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.9ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 63ms (Views: 56.1ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/history/264" for 127.0.0.1 at 2019-03-21 14:28:25 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YJrbHDcsvr6ITKVjDRXETaDujFaOCb+pqRMwPHQV+kSHgATVu0TxqcT5O4fS40jJx6gmnzzaHyrmKAD7Cqs9nQ==", "id"=>"264"}
+  [1m[36mHistory Load (1.7ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 264], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (0.5ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 264]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 11ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:25 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/history/276" for 127.0.0.1 at 2019-03-21 14:28:28 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WohXZVi0hPjZw4YFwfy8qKd+X/NkoKdLcpj0Urs/ADK9kois1NzL75V2GOEeCjAswDj1OtZzB8g9o8SVxYHH6w==", "id"=>"276"}
+  [1m[36mHistory Load (0.3ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 276], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (0.8ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 276]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 12ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:28 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.4ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 72ms (Views: 66.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/history/278" for 127.0.0.1 at 2019-03-21 14:28:30 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pXLLItIYoSaACvlCaBRLe6tejPTObDfTmP86fllhvkZCaBTrXnDuMcy/Z6a34sf/zBgmPXy/l1DXxAq5J995nw==", "id"=>"278"}
+  [1m[36mHistory Load (0.4ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 278], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (2.3ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 278]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 23ms (ActiveRecord: 17.1ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:30 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (7.6ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 85ms (Views: 74.2ms | ActiveRecord: 7.6ms)
+
+
+Started DELETE "/history/265" for 127.0.0.1 at 2019-03-21 14:28:32 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RvDYgBNywOVoF3DYRraSlzmZIUZK520LNg03by6sjk6h6gdJnxqP8iSi7jyZQB4TXt+Lj/g0zYh5NgeoUBJJlw==", "id"=>"265"}
+  [1m[36mHistory Load (0.8ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 265], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (0.5ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 265]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 7ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 14:28:32 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.8ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 65ms (Views: 60.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:28:35 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 14:28:45 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 73ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 14:45:04 +1100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 725ms (Views: 709.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 14:45:06 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:45:10 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (2.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:45:10.696940"], ["updated_at", "2019-03-21 03:45:10.696940"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 130ms (Views: 60.9ms | ActiveRecord: 30.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:46:19 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (2.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:46:19.645036"], ["updated_at", "2019-03-21 03:46:19.645036"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 84ms (Views: 49.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:46:47 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:46:47.947925"], ["updated_at", "2019-03-21 03:46:47.947925"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 11.7ms)
+
+
+  
+RuntimeError ([{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}, {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BN2U1MWE1NTMtYjQ2ZC00MTFmLWFmYjItODMyNGYxOTAyZmEzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws: The Revenge", "Year"=>"1987", "imdbID"=>"tt0093300", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNGI1MTAxMWItOTE0OC00ZDhkLWE3Y2EtNjFiZmQ4NjQ1NGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws 3-D", "Year"=>"1983", "imdbID"=>"tt0085750", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BM2QwYjhiMzQtN2RiYS00MzgxLThmNzItMmJlNmMyMmQyYTA3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"The Making of 'Jaws'", "Year"=>"1995", "imdbID"=>"tt0251821", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BZjkxNTBmZDgtOGUwZS00N2IwLThiMTYtYzljYmU5NzE1MGQyXkEyXkFqcGdeQXVyNTUyNzA5ODE@._V1_SX300.jpg"}, {"Title"=>"In the Jaws of Life", "Year"=>"1984", "imdbID"=>"tt0088312", "Type"=>"movie", "Poster"=>"https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzNjU2ODUwOV5BMl5BanBnXkFtZTYwMzc2MDg4._V1_SX300.jpg"}, {"Title"=>"Jaws of Satan", "Year"=>"1981", "imdbID"=>"tt0082580", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUyOTY4Mzc0N15BMl5BanBnXkFtZTcwNTY2NjE2NA@@._V1_SX300.jpg"}, {"Title"=>"Cruel Jaws", "Year"=>"1995", "imdbID"=>"tt0112747", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNDE2NTIzMjUtOTQ4ZC00ZWRlLTllZDAtNzZlNzRhNTRiNzA4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws in Japan", "Year"=>"2009", "imdbID"=>"tt1786635", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUxMzc3OTkyNV5BMl5BanBnXkFtZTcwMDA0NzMwNw@@._V1_SX300.jpg"}, {"Title"=>"Mako: The Jaws of Death", "Year"=>"1976", "imdbID"=>"tt0074845", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BODJiZmI1Y2ItMjBiNS00NGU0LTk2NmQtNGQ0YmVkYjNiNjlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}]):
+  
+app/controllers/home_controller.rb:29:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:47:16 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:47:16.710823"], ["updated_at", "2019-03-21 03:47:16.710823"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.9ms)
+
+
+  
+RuntimeError ([{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}, {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BN2U1MWE1NTMtYjQ2ZC00MTFmLWFmYjItODMyNGYxOTAyZmEzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws: The Revenge", "Year"=>"1987", "imdbID"=>"tt0093300", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNGI1MTAxMWItOTE0OC00ZDhkLWE3Y2EtNjFiZmQ4NjQ1NGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws 3-D", "Year"=>"1983", "imdbID"=>"tt0085750", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BM2QwYjhiMzQtN2RiYS00MzgxLThmNzItMmJlNmMyMmQyYTA3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"The Making of 'Jaws'", "Year"=>"1995", "imdbID"=>"tt0251821", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BZjkxNTBmZDgtOGUwZS00N2IwLThiMTYtYzljYmU5NzE1MGQyXkEyXkFqcGdeQXVyNTUyNzA5ODE@._V1_SX300.jpg"}, {"Title"=>"In the Jaws of Life", "Year"=>"1984", "imdbID"=>"tt0088312", "Type"=>"movie", "Poster"=>"https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzNjU2ODUwOV5BMl5BanBnXkFtZTYwMzc2MDg4._V1_SX300.jpg"}, {"Title"=>"Jaws of Satan", "Year"=>"1981", "imdbID"=>"tt0082580", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUyOTY4Mzc0N15BMl5BanBnXkFtZTcwNTY2NjE2NA@@._V1_SX300.jpg"}, {"Title"=>"Cruel Jaws", "Year"=>"1995", "imdbID"=>"tt0112747", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNDE2NTIzMjUtOTQ4ZC00ZWRlLTllZDAtNzZlNzRhNTRiNzA4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws in Japan", "Year"=>"2009", "imdbID"=>"tt1786635", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUxMzc3OTkyNV5BMl5BanBnXkFtZTcwMDA0NzMwNw@@._V1_SX300.jpg"}, {"Title"=>"Mako: The Jaws of Death", "Year"=>"1976", "imdbID"=>"tt0074845", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BODJiZmI1Y2ItMjBiNS00NGU0LTk2NmQtNGQ0YmVkYjNiNjlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}]):
+  
+app/controllers/home_controller.rb:29:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:47:26 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (2.0ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:47:26.592509"], ["updated_at", "2019-03-21 03:47:26.592509"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 4.2ms)
+
+
+  
+RuntimeError ([{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}, {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BN2U1MWE1NTMtYjQ2ZC00MTFmLWFmYjItODMyNGYxOTAyZmEzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws: The Revenge", "Year"=>"1987", "imdbID"=>"tt0093300", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNGI1MTAxMWItOTE0OC00ZDhkLWE3Y2EtNjFiZmQ4NjQ1NGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws 3-D", "Year"=>"1983", "imdbID"=>"tt0085750", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BM2QwYjhiMzQtN2RiYS00MzgxLThmNzItMmJlNmMyMmQyYTA3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"The Making of 'Jaws'", "Year"=>"1995", "imdbID"=>"tt0251821", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BZjkxNTBmZDgtOGUwZS00N2IwLThiMTYtYzljYmU5NzE1MGQyXkEyXkFqcGdeQXVyNTUyNzA5ODE@._V1_SX300.jpg"}, {"Title"=>"In the Jaws of Life", "Year"=>"1984", "imdbID"=>"tt0088312", "Type"=>"movie", "Poster"=>"https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzNjU2ODUwOV5BMl5BanBnXkFtZTYwMzc2MDg4._V1_SX300.jpg"}, {"Title"=>"Jaws of Satan", "Year"=>"1981", "imdbID"=>"tt0082580", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUyOTY4Mzc0N15BMl5BanBnXkFtZTcwNTY2NjE2NA@@._V1_SX300.jpg"}, {"Title"=>"Cruel Jaws", "Year"=>"1995", "imdbID"=>"tt0112747", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNDE2NTIzMjUtOTQ4ZC00ZWRlLTllZDAtNzZlNzRhNTRiNzA4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws in Japan", "Year"=>"2009", "imdbID"=>"tt1786635", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUxMzc3OTkyNV5BMl5BanBnXkFtZTcwMDA0NzMwNw@@._V1_SX300.jpg"}, {"Title"=>"Mako: The Jaws of Death", "Year"=>"1976", "imdbID"=>"tt0074845", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BODJiZmI1Y2ItMjBiNS00NGU0LTk2NmQtNGQ0YmVkYjNiNjlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}]):
+  
+app/controllers/home_controller.rb:29:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:47:46 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (3.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:47:46.773288"], ["updated_at", "2019-03-21 03:47:46.773288"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 5.5ms)
+
+
+  
+RuntimeError ([{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}, {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BN2U1MWE1NTMtYjQ2ZC00MTFmLWFmYjItODMyNGYxOTAyZmEzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws: The Revenge", "Year"=>"1987", "imdbID"=>"tt0093300", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNGI1MTAxMWItOTE0OC00ZDhkLWE3Y2EtNjFiZmQ4NjQ1NGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws 3-D", "Year"=>"1983", "imdbID"=>"tt0085750", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BM2QwYjhiMzQtN2RiYS00MzgxLThmNzItMmJlNmMyMmQyYTA3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"The Making of 'Jaws'", "Year"=>"1995", "imdbID"=>"tt0251821", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BZjkxNTBmZDgtOGUwZS00N2IwLThiMTYtYzljYmU5NzE1MGQyXkEyXkFqcGdeQXVyNTUyNzA5ODE@._V1_SX300.jpg"}, {"Title"=>"In the Jaws of Life", "Year"=>"1984", "imdbID"=>"tt0088312", "Type"=>"movie", "Poster"=>"https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzNjU2ODUwOV5BMl5BanBnXkFtZTYwMzc2MDg4._V1_SX300.jpg"}, {"Title"=>"Jaws of Satan", "Year"=>"1981", "imdbID"=>"tt0082580", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUyOTY4Mzc0N15BMl5BanBnXkFtZTcwNTY2NjE2NA@@._V1_SX300.jpg"}, {"Title"=>"Cruel Jaws", "Year"=>"1995", "imdbID"=>"tt0112747", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNDE2NTIzMjUtOTQ4ZC00ZWRlLTllZDAtNzZlNzRhNTRiNzA4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws in Japan", "Year"=>"2009", "imdbID"=>"tt1786635", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUxMzc3OTkyNV5BMl5BanBnXkFtZTcwMDA0NzMwNw@@._V1_SX300.jpg"}, {"Title"=>"Mako: The Jaws of Death", "Year"=>"1976", "imdbID"=>"tt0074845", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BODJiZmI1Y2ItMjBiNS00NGU0LTk2NmQtNGQ0YmVkYjNiNjlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}]):
+  
+app/controllers/home_controller.rb:29:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:48:18 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:48:18.574389"], ["updated_at", "2019-03-21 03:48:18.574389"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 164ms (Views: 111.8ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:48:21 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:48:21.155378"], ["updated_at", "2019-03-21 03:48:21.155378"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 43.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:48:21 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:48:21.389458"], ["updated_at", "2019-03-21 03:48:21.389458"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 48.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:48:21 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:48:21.610367"], ["updated_at", "2019-03-21 03:48:21.610367"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 105ms (Views: 58.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:49:22 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:49:22.373771"], ["updated_at", "2019-03-21 03:49:22.373771"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 166ms (Views: 114.4ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:51:09 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:51:09.065006"], ["updated_at", "2019-03-21 03:51:09.065006"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 164ms (Views: 117.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:51:10 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:51:10.234682"], ["updated_at", "2019-03-21 03:51:10.234682"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 53.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:51:10 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:51:10.979454"], ["updated_at", "2019-03-21 03:51:10.979454"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 61.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:51:24 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:51:25.010720"], ["updated_at", "2019-03-21 03:51:25.010720"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 10.0ms)
+
+
+  
+RuntimeError ([{"Title"=>"Jaws", "Year"=>"1975", "imdbID"=>"tt0073195", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"}, {"Title"=>"Jaws 2", "Year"=>"1978", "imdbID"=>"tt0077766", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BN2U1MWE1NTMtYjQ2ZC00MTFmLWFmYjItODMyNGYxOTAyZmEzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws: The Revenge", "Year"=>"1987", "imdbID"=>"tt0093300", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNGI1MTAxMWItOTE0OC00ZDhkLWE3Y2EtNjFiZmQ4NjQ1NGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws 3-D", "Year"=>"1983", "imdbID"=>"tt0085750", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BM2QwYjhiMzQtN2RiYS00MzgxLThmNzItMmJlNmMyMmQyYTA3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"The Making of 'Jaws'", "Year"=>"1995", "imdbID"=>"tt0251821", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BZjkxNTBmZDgtOGUwZS00N2IwLThiMTYtYzljYmU5NzE1MGQyXkEyXkFqcGdeQXVyNTUyNzA5ODE@._V1_SX300.jpg"}, {"Title"=>"In the Jaws of Life", "Year"=>"1984", "imdbID"=>"tt0088312", "Type"=>"movie", "Poster"=>"https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzNjU2ODUwOV5BMl5BanBnXkFtZTYwMzc2MDg4._V1_SX300.jpg"}, {"Title"=>"Jaws of Satan", "Year"=>"1981", "imdbID"=>"tt0082580", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUyOTY4Mzc0N15BMl5BanBnXkFtZTcwNTY2NjE2NA@@._V1_SX300.jpg"}, {"Title"=>"Cruel Jaws", "Year"=>"1995", "imdbID"=>"tt0112747", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BNDE2NTIzMjUtOTQ4ZC00ZWRlLTllZDAtNzZlNzRhNTRiNzA4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}, {"Title"=>"Jaws in Japan", "Year"=>"2009", "imdbID"=>"tt1786635", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BMTUxMzc3OTkyNV5BMl5BanBnXkFtZTcwMDA0NzMwNw@@._V1_SX300.jpg"}, {"Title"=>"Mako: The Jaws of Death", "Year"=>"1976", "imdbID"=>"tt0074845", "Type"=>"movie", "Poster"=>"https://m.media-amazon.com/images/M/MV5BODJiZmI1Y2ItMjBiNS00NGU0LTk2NmQtNGQ0YmVkYjNiNjlmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"}]):
+  
+app/controllers/home_controller.rb:29:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:57:40 +1100
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:57:40.377612"], ["updated_at", "2019-03-21 03:57:40.377612"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 19.0ms)
+
+
+  
+RuntimeError ([{:title=>"Jaws", :imdbID=>"tt0073195"}, {:title=>"Jaws 2", :imdbID=>"tt0077766"}, {:title=>"Jaws: The Revenge", :imdbID=>"tt0093300"}, {:title=>"Jaws 3-D", :imdbID=>"tt0085750"}, {:title=>"The Making of 'Jaws'", :imdbID=>"tt0251821"}, {:title=>"In the Jaws of Life", :imdbID=>"tt0088312"}, {:title=>"Jaws of Satan", :imdbID=>"tt0082580"}, {:title=>"Cruel Jaws", :imdbID=>"tt0112747"}, {:title=>"Jaws in Japan", :imdbID=>"tt1786635"}, {:title=>"Mako: The Jaws of Death", :imdbID=>"tt0074845"}]):
+  
+app/controllers/home_controller.rb:29:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:58:02 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:58:02.205508"], ["updated_at", "2019-03-21 03:58:02.205508"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (286.7ms)
+Completed 500 Internal Server Error in 362ms (ActiveRecord: 9.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `movie' for #<#<Class:0x00007f7f332a5788>:0x00007f7f3329f388>
+Did you mean?  @movie):
+     8:         <ul class ="list-unstyled" >
+     9:           <%# @movie.each do |movie| %>
+    10:             <li>
+    11:               <p><%= movie[:title]%></p>
+    12:             </li>
+    13:             <%#end%>
+    14:           </ul>
+  
+app/views/movie/show.html.erb:11:in `_app_views_movie_show_html_erb__2966933433800136246_70092147976460'
+app/controllers/home_controller.rb:44:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:58:18 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:58:18.143983"], ["updated_at", "2019-03-21 03:58:18.143983"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 3.3ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+     8:         <ul class ="list-unstyled" >
+     9:           <%# @movie.each do |movie| %>
+    10:             <li>
+    11:               <p><%= @movie[:title]%></p>
+    12:             </li>
+    13:             <%#end%>
+    14:           </ul>
+  
+app/views/movie/show.html.erb:11:in `_app_views_movie_show_html_erb__2966933433800136246_70092119096000'
+app/controllers/home_controller.rb:44:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:58:55 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:58:55.398990"], ["updated_at", "2019-03-21 03:58:55.398990"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+     8:         <ul class ="list-unstyled" >
+     9:           <% @movie.each do |movie| %>
+    10:             <li>
+    11:               <p><%= @movie[:title]%></p>
+    12:             </li>
+    13:           <%end%>
+    14:         </ul>
+  
+app/views/movie/show.html.erb:11:in `block in _app_views_movie_show_html_erb__2966933433800136246_70092120443240'
+app/views/movie/show.html.erb:9:in `each'
+app/views/movie/show.html.erb:9:in `_app_views_movie_show_html_erb__2966933433800136246_70092120443240'
+app/controllers/home_controller.rb:44:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:59:01 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:59:01.701882"], ["updated_at", "2019-03-21 03:59:01.701882"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 576ms (Views: 544.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 14:59:50 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.7ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 03:59:50.138400"], ["updated_at", "2019-03-21 03:59:50.138400"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 2.7ms)
+
+
+  
+SyntaxError (/Users/priyanka/miniprojects/grety/app/views/movie/show.html.erb:11: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <%= link_to movie[:title], pat...
+...                              ^
+/Users/priyanka/miniprojects/grety/app/views/movie/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;          end
+                   ^~~
+/Users/priyanka/miniprojects/grety/app/views/movie/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/priyanka/miniprojects/grety/app/views/movie/show.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/movie/show.html.erb:11: syntax error, unexpected '<'
+app/views/movie/show.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+app/views/movie/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/movie/show.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/home_controller.rb:44:in `index'
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:00:02 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.3ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:00:02.713510"], ["updated_at", "2019-03-21 04:00:02.713510"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 76ms (Views: 44.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:00:26 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:00:26.653351"], ["updated_at", "2019-03-21 04:00:26.653351"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 126ms (Views: 76.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:00:28 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:00:28.978990"], ["updated_at", "2019-03-21 04:00:28.978990"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 81ms (Views: 47.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:00:29 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:00:29.231778"], ["updated_at", "2019-03-21 04:00:29.231778"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 58.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:00:54 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.1ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:00:54.147763"], ["updated_at", "2019-03-21 04:00:54.147763"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 79ms (Views: 42.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 15:01:07 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+Titanic&commit=Search" for 127.0.0.1 at 2019-03-21 15:06:28 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie Titanic", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (4.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie Titanic"], ["created_at", "2019-03-21 04:06:28.758300"], ["updated_at", "2019-03-21 04:06:28.758300"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1065ms (Views: 198.4ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 15:06:32 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+happy&commit=Search" for 127.0.0.1 at 2019-03-21 15:06:48 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote happy", "commit"=>"Search"}
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote happy"], ["created_at", "2019-03-21 04:06:48.862845"], ["updated_at", "2019-03-21 04:06:48.862845"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9546ms (Views: 46.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=quote+happy&commit=Search" for 127.0.0.1 at 2019-03-21 15:07:01 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"quote happy", "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.4ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "quote happy"], ["created_at", "2019-03-21 04:07:01.955221"], ["updated_at", "2019-03-21 04:07:01.955221"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering quote/show.html.erb within layouts/application
+  Rendered quote/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10340ms (Views: 53.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=giphy+smile&commit=Search" for 127.0.0.1 at 2019-03-21 15:07:28 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"giphy smile", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "giphy smile"], ["created_at", "2019-03-21 04:07:28.217603"], ["updated_at", "2019-03-21 04:07:28.217603"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering giphy/show.html.erb within layouts/application
+  Rendered giphy/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 507ms (Views: 49.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+brexit&commit=Search" for 127.0.0.1 at 2019-03-21 15:08:01 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news brexit", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (2.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news brexit"], ["created_at", "2019-03-21 04:08:01.108517"], ["updated_at", "2019-03-21 04:08:01.108517"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2248ms (Views: 176.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=news+lady+gaga&commit=Search" for 127.0.0.1 at 2019-03-21 15:08:21 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"news lady gaga", "commit"=>"Search"}
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.9ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "news lady gaga"], ["created_at", "2019-03-21 04:08:21.010295"], ["updated_at", "2019-03-21 04:08:21.010295"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering news/show.html.erb within layouts/application
+  Rendered news/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1470ms (Views: 47.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 15:08:32 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 63ms (Views: 54.9ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/history/274" for 127.0.0.1 at 2019-03-21 15:08:39 +1100
+Processing by HistoryController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KHPKvLZd7BKn3XMWHAweRvxzc7zaza2eOMun+MrdEqfPaRV1OjWjBeto7fLD+pLCmzXZdWgeDR138Jc/tGPVfg==", "id"=>"274"}
+  [1m[36mHistory Load (0.5ms)[0m  [1m[34mSELECT  "histories".* FROM "histories" WHERE "histories"."id" = $1 LIMIT $2[0m  [["id", 274], ["LIMIT", 1]]
+  ↳ app/controllers/history_controller.rb:7
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/history_controller.rb:8
+  [1m[36mHistory Destroy (1.5ms)[0m  [1m[31mDELETE FROM "histories" WHERE "histories"."id" = $1[0m  [["id", 274]]
+  ↳ app/controllers/history_controller.rb:8
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/history_controller.rb:8
+Redirected to http://localhost:3000/history
+Completed 302 Found in 12ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 15:08:39 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (1.1ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 87ms (Views: 81.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 15:08:52 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2019-03-21 15:09:01 +1100
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 15:09:02 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-21 15:09:04 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 15:09:15 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.7ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 133ms (Views: 128.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:10:21 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (8.2ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:10:21.035565"], ["updated_at", "2019-03-21 04:10:21.035565"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 113ms (Views: 73.9ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:14:19 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (1.5ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:14:19.838767"], ["updated_at", "2019-03-21 04:14:19.838767"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 1072ms (Views: 183.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/movie?imdbID=tt0073195" for 127.0.0.1 at 2019-03-21 15:14:22 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movie?imdbID=tt0073195" for 127.0.0.1 at 2019-03-21 15:16:50 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movie?imdbID=tt0073195" for 127.0.0.1 at 2019-03-21 15:18:20 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movie?imdbID=tt0073195" for 127.0.0.1 at 2019-03-21 15:22:01 +1100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/priyanka/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/movie"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movie?imdbID=tt0073195" for 127.0.0.1 at 2019-03-21 15:22:50 +1100
+  
+ActionController::RoutingError (No route matches [GET] "/movie"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-21 15:22:56 +1100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 531ms (Views: 530.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+jaws&commit=Search" for 127.0.0.1 at 2019-03-21 15:22:59 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie jaws", "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (2.1ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie jaws"], ["created_at", "2019-03-21 04:22:59.396361"], ["updated_at", "2019-03-21 04:22:59.396361"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 158ms (Views: 73.3ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/movie/detail?imdbID=tt0093300" for 127.0.0.1 at 2019-03-21 15:23:00 +1100
+Processing by MovieController#detail as HTML
+  Parameters: {"imdbID"=>"tt0093300"}
+  Rendering movie/detail.html.erb within layouts/application
+  Rendered movie/detail.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 485ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&query=movie+avengers&commit=Search" for 127.0.0.1 at 2019-03-21 15:23:21 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"movie avengers", "commit"=>"Search"}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (0.6ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie avengers"], ["created_at", "2019-03-21 04:23:21.131717"], ["updated_at", "2019-03-21 04:23:21.131717"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 564ms (Views: 74.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/movie/detail?imdbID=tt0054518" for 127.0.0.1 at 2019-03-21 15:23:24 +1100
+Processing by MovieController#detail as HTML
+  Parameters: {"imdbID"=>"tt0054518"}
+  Rendering movie/detail.html.erb within layouts/application
+  Rendered movie/detail.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 492ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/history" for 127.0.0.1 at 2019-03-21 15:23:56 +1100
+Processing by HistoryController#index as HTML
+  Rendering history/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.9ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  ↳ app/views/history/index.html.erb:12
+  Rendered history/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 60ms (Views: 54.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?query=movie+avengers" for 127.0.0.1 at 2019-03-21 15:24:09 +1100
+Processing by HomeController#index as HTML
+  Parameters: {"query"=>"movie avengers"}
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:18
+  [1m[36mHistory Create (24.8ms)[0m  [1m[32mINSERT INTO "histories" ("query", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["query", "movie avengers"], ["created_at", "2019-03-21 04:24:09.676488"], ["updated_at", "2019-03-21 04:24:09.676488"]]
+  ↳ app/controllers/home_controller.rb:18
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:18
+  Rendering movie/show.html.erb within layouts/application
+  Rendered movie/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 125ms (Views: 65.5ms | ActiveRecord: 29.2ms)
+
+
+Started GET "/movie/detail?imdbID=tt4154756" for 127.0.0.1 at 2019-03-21 15:24:11 +1100
+Processing by MovieController#detail as HTML
+  Parameters: {"imdbID"=>"tt4154756"}
+  Rendering movie/detail.html.erb within layouts/application
+  Rendered movie/detail.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 503ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+

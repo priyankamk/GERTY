@@ -3,7 +3,7 @@
 ## Build with
 - HTML & CSS
 - Ruby on rails 5.2.2.1
-- APIs
+- 5 APIs
 - Bootstrap
 - HTTParty gem
 - PostgreSQL

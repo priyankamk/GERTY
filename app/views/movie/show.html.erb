@@ -1,13 +1,13 @@
 <div class="container">
   <div class="jumbotron">
     <div class="card-header">
-      <h2>List for similar movies:</h2>
+      <h2 class="movie-font">List for similar movies:</h2>
     </div>
     <% @movie.each do |movie| %>
       <div class="row ml-3 mr-1">
         <ul class ="list-unstyled" >
           <li>
-            <a href='/movie/detail?imdbID=<%= movie[:imdbID] %>'>
+            <a href='/movie/detail?imdbID=<%= movie[:imdbID] %>' class="movie-font">
               <%= movie[:title] %>
             </a>
           </li>

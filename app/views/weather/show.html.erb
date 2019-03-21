@@ -1,19 +1,20 @@
 <div class="container">
   <div class="jumbotron wrapper">
+    <h2 class="weather_font">Weather forecast</h2>
     <section class="graphic">
       <div class="icon">
         <%= image_tag @weather[:emoticon] %>
       </div>
     </section>
-    <section class="temperature">
+    <section class="temperature weather_font">
       <h2> <%= @weather[:current_temperature]
     %>°C</h2>
     </section>
-    <section class="summary">
+    <section class="summary weather_font">
       <h3><%= @weather[:summary]%></h5>
     </section>
-    <section class="city">
-      <h2 class="display-5"><%= @weather[:time_zone]%></h2>
+    <section class="city weather_font">
+      <h2 class="display-5 "><%= @weather[:time_zone]%></h2>
     </section>
   </div>
 </div>

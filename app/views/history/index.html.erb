@@ -2,7 +2,7 @@
   <div class="jumbotron">
     <div class="row">
       <div class="col">
-        <h1>Search History</h1>
+        <h1 class="history_font">Search History</h1>
       </div>
       <div class="pull-right col-xs-1">
         <%= link_to "Clear History", history_clear_path, method: "post", class: "btn btn-danger"%>
@@ -14,7 +14,7 @@
         <li class="list-group-item list-group-item-light">
           <div class="row">
             <div class="col">
-              <%= link_to history.query, controller: 'home', action: 'index', params: {query: history.query} %>
+              <%= link_to history.query, controller: 'home', action: 'index', params: {query: history.query}, class: "history_font" %>
             </div>
             <div class="pull-right col-xs-1">
               <%= link_to 'Delete', history, method: :delete, class: 'btn btn-outline-danger' %>

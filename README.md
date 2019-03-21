@@ -22,9 +22,9 @@
 
 ## Approach
 
-- My aim for this project to learn How to use API's and build something useful that i can use in future.
-- Use rails for a decent app.
-- I am building API's that consumes other API's.
+- My aim for this project to learn How to use API's and build something useful that I can use in future.
+- Understand how to use rails app.
+- Building API's that consumes other API's.
 
 1. Designed the website from wireframe.
 2. Created trello app with designed card task. eg: Todo list, doing, done, Feature and Aim.

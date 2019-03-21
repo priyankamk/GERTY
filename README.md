@@ -1,24 +1,44 @@
-# README
+# GERTY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Technologies Used
+- HTML & CSS
+- APIs
+- Ruby on rails
+- Bootstrap
+- HTTParty gem
 
-Things you may want to cover:
+## Description
+ - GERTY is a Virtual Assistant that helps you find information quickly. Be it current weather,
+    breaking news or getting inspired with an inspirational quote to start your day!
+    Ask away and get answer to your question and get on without scrolling through endless pages
+    of google search results.
+ -  GERTY is powered by:
+    1. OMDB API
+    2. News API
+    3. Weather API
+    4. Quotes API
+    5. Giphy API
 
-* Ruby version
+## Approach
+1. Designed the website from wireframe.
+2. Created trello app with designed card task. eg: Todo list, doing, done, Feature and Aim.
+3. Made a list of API's that i want to work with.
+4. Created ruby on rails app.
+5. Created database to store history search.
+6. Generated models, controller and action.
+7. Got JSON data from the API's.
+8. Used HTTParty gem and fetch function to talk with API's
+9. Using the API's JSON data, created web pages using ruby.
+10. Made frequent commits.
+11. Error handling and avoiding empty input not to save in db.
 
-* System dependencies
+## Difficult Obstacles
 
-* Configuration
+1. Talking with API's and working with different API's
+2. Learning new concept - About Modules.
+3. learning to use link_to tag functionality
+4. to make the all the query of API's to be used in a single page and display in home page.
+5. finding out - query's that match with "giphy" as action "rainbow cat" as query_req.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Deployment 
+- Heroku

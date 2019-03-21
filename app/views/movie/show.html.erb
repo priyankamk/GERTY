@@ -1,12 +1,12 @@
 <div class="container">
   <div class="card">
     <div class="card-header text-center">
-      <h2 class="movie-font">List for similar movies:</h2>
+      <h2 class="movie-font">List for similar movies</h2>
     </div>
     <% @movie.each do |movie| %>
-      <ul class ="list-group list-group-flush" >
-        <li class="list-group-item text-center">
-          <a href='/movie/detail?imdbID=<%= movie[:imdbID] %>' class="grow movie-font"><%= movie[:title] %></a>
+      <ul class ="list-group list-group-flush grow">
+        <li class ="list-group-item text-center">
+          <a href ='/movie/detail?imdbID=<%= movie[:imdbID] %>' class="movie-font "><%= movie[:title] %></a>
         </li>
       </ul>
     <%end%>

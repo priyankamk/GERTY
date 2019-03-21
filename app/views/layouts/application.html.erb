@@ -27,9 +27,9 @@
     <div class="container">
       <%= form_tag '/', method: :get do %>
         <div class="input-group mb-3">
-          <%= text_field_tag :query, nil, class: 'form-control home_font', placeholder: "giphy / weather / movie / quote / news"%>
-          <div class="input-group-append">
-            <%= submit_tag 'Search', class:"btn btn-outline-light",id:"button-addon2  home_font" %>
+          <%= text_field_tag :query, nil, class: 'form-control home_font', placeholder: " news / weather / movie / giphy / quote"%>
+          <div class="input-group-append home_font">
+            <%= submit_tag 'Search', class:"btn btn-outline-light",id:"button-addon2 " %>
           </div>
         </div>
       <% end %>

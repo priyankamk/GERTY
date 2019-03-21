@@ -14,10 +14,10 @@ class HomeController < ApplicationController
     end
     
     history = History.new
-    history.query = params[:query]
+    history.query = params[:query].downcase
     history.save!
 
-    query_array = params[:query].split(" ")
+    query_array = params[:query].downcase.split(" ")
     action = query_array.shift #eg: giphy or movie
     query_req = query_array.join(' ') #eg: avengers or rainbow cats    
     if action == "weather"

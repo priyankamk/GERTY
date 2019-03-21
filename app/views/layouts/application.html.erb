@@ -5,8 +5,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
   </head>
   <body>
     <div>
@@ -25,7 +27,7 @@
     <div class="container">
       <%= form_tag '/', method: :get do %>
         <div class="input-group mb-3">
-          <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy / weather / movie / quote"%>
+          <%= text_field_tag :query, nil, class: 'form-control', placeholder: "giphy / weather / movie / quote / news"%>
           <div class="input-group-append">
             <%= submit_tag 'Search', class:"btn btn-outline-light",id:"button-addon2" %>
           </div>

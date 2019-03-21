@@ -12,7 +12,6 @@ class HistoryController < ApplicationController
 
   def clear 
     History.delete_all
-
     redirect_to history_index_path
   end
 end

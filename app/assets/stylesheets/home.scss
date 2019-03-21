@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-image: url(asset_path("gerty1.jpg"));
-}
+  background-image: url(asset_path("gerty5.png"));
+  background-repeat: no-repeat;
+  background-size: 200vh;
 
+}
+.blog-header-logo {
+  font-family: 'Philosopher', sans-serif;
+  // background-color: rgba(13, 9, 240, 0.89);
+  border-radius: 10px;
+}

@@ -1,8 +1,8 @@
 <div class="container">
   <div  class="jumbotorn">
-    <h3 class="display-3 text-center">News</h3>
+    <h3 class="display-4 text-center">News</h3>
     <% @news.map do |news| %>
-      <div class="card">
+      <div class="card mb-3">
         <div class="card-body">
           <h5 class="card-title"><%= news[:title] %></h5>
           <p><%= news[:author]%></p>

@@ -3,7 +3,7 @@ module Api
   class Movie
     def fetch(query:)
       # movie_name = query.split(" ")[1]
-      response = HTTParty.get("http://www.omdbapi.com/?t=#{query}&apikey=2f6435d9")
+      response = HTTParty.get("http://www.omdbapi.com/?i=#{query}&apikey=2f6435d9")
       return {
         title: response["Title"],
         year: response["Year"],
@@ -16,7 +16,5 @@ module Api
         actors: response["Actors"]
       }
     end
-
-
   end
 end

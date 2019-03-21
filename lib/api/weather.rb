@@ -21,7 +21,7 @@ module Api
         "rain" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/rainy-6.svg',
         "snow" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/snowy-6.svg',
         "sleet" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/snowy-5.svg',
-        "wind" =>  '🌬',
+        "wind" =>  'https://image.flaticon.com/icons/svg/959/959711.svg',
         "fog" =>  'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy.svg',
         "cloudy" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy.svg',
         "partly-cloudy-day" => 'https://www.amcharts.com/wp-content/themes/amcharts4/css/img/icons/weather/animated/cloudy-day-1.svg',

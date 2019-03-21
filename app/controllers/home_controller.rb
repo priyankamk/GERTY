@@ -1,6 +1,7 @@
 require_relative '../../lib/api/weather'
 require_relative '../../lib/api/giphy'
 require_relative '../../lib/api/movie'
+require_relative '../../lib/api/movie_list'
 require_relative '../../lib/api/quote'
 require_relative '../../lib/api/news'
 
@@ -24,7 +25,7 @@ class HomeController < ApplicationController
     elsif action == "giphy"
       @giphies = Api::Giphy.new.fetch(query: query_req)
     elsif action == "movie"
-      @movie = Api::Movie.new.fetch(query: query_req)
+      @movie = Api::MovieList.new.fetch(query: query_req)
     elsif action == "quote"
       @quote = Api::Quote.new.fetch(query: query_req)
       # @color = "%06x" % (rand * 0xffffff)  

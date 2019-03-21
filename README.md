@@ -1,11 +1,12 @@
 # [GERTY](https://gerty-app-5.herokuapp.com/)
 
-## Technologies Used
+## Build with
 - HTML & CSS
-- APIs
 - Ruby on rails
+- APIs
 - Bootstrap
 - HTTParty gem
+- PostgreSQL
 
 ## Description
  - GERTY is a Virtual Assistant that helps you find information quickly. Be it current weather,

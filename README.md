@@ -43,7 +43,7 @@
 1. Talking with API's and working with different API's
 2. Learning new concept - About Modules.
 3. learning to use link_to tag functionality
-4. to make the all the query of API's to be used in a single page and display in home page.
+4. to make the all the query of API's to be used in a single home page.
 5. finding out - query's that match with "giphy" as action "rainbow cat" as query_req.
 
 ## Learn about API's:

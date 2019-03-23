@@ -21,14 +21,13 @@ class HomeController < ApplicationController
     action = query_array.shift #eg: giphy or movie
     query_req = query_array.join(' ') #eg: avengers or rainbow cats    
     if action == "weather"
-      @weather = Api::Weather.new.fetch(query: query_req)
+      @weather = Api::Weather.fetch(query: query_req)
     elsif action == "giphy"
-      @giphies = Api::Giphy.new.fetch(query: query_req)
+      @giphies = Api::Giphy.fetch(query: query_req)
     elsif action == "movie"
-      @movie = Api::MovieList.new.fetch(query: query_req)
-      # raise @movie.inspect
+      @movie = Api::MovieList.fetch(query: query_req)
     elsif action == "quote"
-      @quote = Api::Quote.new.fetch(query: query_req)
+      @quote = Api::Quote.fetch(query: query_req)
       # @color = "%06x" % (rand * 0xffffff)  
       r = rand(255).to_s(16)
       g = rand(255).to_s(16)
@@ -36,9 +35,7 @@ class HomeController < ApplicationController
       r, g, b = [r, g, b].map { |s| if s.size == 1 then '0' + s else s end }
       @color = r + g + b 
     elsif action == "news"
-      
-      @news = Api::News.new.fetch(query: query_req)
-      # raise @news.inspect
+      @news = Api::News.fetch(query: query_req)
     end
 
     render "#{action}/show"

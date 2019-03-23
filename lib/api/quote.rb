@@ -2,7 +2,7 @@ require 'httparty'
 
 module Api
   class Quote
-    def fetch(query:)
+    def self.fetch(query:)
       response = HTTParty.get(
         "http://quotes.rest/quote/search?minlength=100&maxlength=300&query=#{query}&private=false",
         headers: {

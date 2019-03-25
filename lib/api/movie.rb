@@ -4,7 +4,7 @@ module Api
   class Movie
     def self.fetch(query:)
       # listOfMovie = Api::MovieList.new.fetch(query: query)
-      response = HTTParty.get("http://www.omdbapi.com/?i=#{query}&apikey=2f6435d9")
+      response = HTTParty.get("http://www.omdbapi.com/?i=#{query}&apikey=#{ENV['MOVIE_API_KEY']}")
       return {
         title: response["Title"],
         year: response["Year"],

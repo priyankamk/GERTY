@@ -6,7 +6,7 @@ module Api
       response = HTTParty.get(
         "http://quotes.rest/quote/search?minlength=100&maxlength=300&query=#{query}&private=false",
         headers: {
-          'X-TheySaidSo-Api-Secret': '3_BkOSsR9g7E8Ys3zEa6_QeF'
+          'X-TheySaidSo-Api-Secret': "#{ENV['QUOTE_API_KEY']}"
         })
       return {
         quote: response["contents"]["quote"],

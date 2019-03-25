@@ -5,7 +5,7 @@ module Api
   class Weather
     def self.fetch(query:)
       geometry = Api::Geocoder.fetch(query: query)
-      response = HTTParty.get("https://api.darksky.net/forecast/08b00281f472f76d5b144da2d53fa28c/#{geometry["lat"]},#{geometry["lng"]}?units=si")
+      response = HTTParty.get("https://api.darksky.net/forecast/#{ENV['WEATHER_API_KEY']}/#{geometry["lat"]},#{geometry["lng"]}?units=si")
         return {
           current_temperature: response["currently"]["temperature"],
           time_zone: response["timezone"],

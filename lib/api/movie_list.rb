@@ -3,7 +3,7 @@ require 'httparty'
 module Api
   class MovieList
     def self.fetch(query:)
-      response = HTTParty.get("http://www.omdbapi.com/?s=#{query}&apikey=2f6435d9")
+      response = HTTParty.get("http://www.omdbapi.com/?s=#{query}&apikey=#{ENV['MOVIE_API_KEY']}")
       response["Search"].map do |search|
         {
           title: search['Title'],

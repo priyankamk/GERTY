@@ -4,6 +4,7 @@ require_relative '../../lib/api/movie'
 require_relative '../../lib/api/movie_list'
 require_relative '../../lib/api/quote'
 require_relative '../../lib/api/news'
+require_relative '../../lib/api/intent_recognizer'
 
 class HomeController < ApplicationController
 
@@ -17,9 +18,11 @@ class HomeController < ApplicationController
     history.query = params[:query].downcase
     history.save!
 
-    query_array = params[:query].downcase.split(" ")
-    action = query_array.shift #eg: giphy or movie
-    query_req = query_array.join(' ') #eg: avengers or rainbow cats    
+    # query_array = params[:query].downcase.split(" ")
+    # action = query_array.shift #eg: giphy or movie
+    # query_req = query_array.join(' ') #eg: avengers or rainbow cats  
+    action, query_req = Api::IntentRecognizer.new.recognize(query: params[:query])
+     
     if action == "weather"
       @weather = Api::Weather.fetch(query: query_req)
     elsif action == "giphy"
@@ -28,7 +31,6 @@ class HomeController < ApplicationController
       @movie = Api::MovieList.fetch(query: query_req)
     elsif action == "quote"
       @quote = Api::Quote.fetch(query: query_req)
-      # @color = "%06x" % (rand * 0xffffff)  
       r = rand(255).to_s(16)
       g = rand(255).to_s(16)
       b = rand(255).to_s(16)

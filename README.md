@@ -1,38 +1,39 @@
 # [GERTY](https://gerty-app-5.herokuapp.com/)
 
 ## Build with
-- HTML & CSS
+- HTML5 & CSS3
 - Ruby on rails 5.2.2.1
 - 5 APIs
 - [LUIS(Language Understanding)](https://docs.microsoft.com/en-gb/azure/cognitive-services/luis/what-is-luis)
 - Bootstrap
 - HTTParty gem
 - PostgreSQL
-- [SENTRY](https://docs.sentry.io/)
+- [SENTRY](https://docs.sentry.io/) - For error tracking
 
 ## Description
- - GERTY is a Virtual Assistant that helps you find information quickly. Be it current weather,
+ - GERTY is a Virtual Assistant that helps you find        information quickly. Be it current weather,
     breaking news or getting inspired with an inspirational quote to start your day!
     Ask away and get answer to your question and get on without scrolling through endless pages
     of google search results.
+
  -  GERTY is powered by:
-    1. [OMDB API](http://www.omdbapi.com/)
-    2. [News API](https://newsapi.org/)
-    3. [Weather API](https://darksky.net/dev)
+    1. [News API](https://newsapi.org/)
+    2. [Weather API](https://darksky.net/dev)
+    3. [OMDB API](http://www.omdbapi.com/)
     4. [Quotes API](http://quotes.rest/)
     5. [Giphy API](https://giphy.com/)
 
-## Approach
-
+## Objective
 - My aim for this project to learn How to use API's and build something useful that I can use in future.
 - Understand how to use rails app.
 - Building API's that consumes other API's.
 - Learn to use LUIS(Language Understanding)
 - Learn about environment variable to store API keys in private.
 
+## Approach
 1. Designed the website from wireframe.
 2. Created trello app with designed card task. eg: Todo list, doing, done, Feature and Aim.
-3. Made a list of API's that i want to work with.
+3. Made a list of API's that I want to work with.
 4. Created ruby on rails app.
 5. Created database to store history search.
 6. Generated models, controller and action.
@@ -43,7 +44,6 @@
 11. Error handling and avoiding empty input not to save in db.
 
 ## Difficult Obstacles
-
 1. Talking with API's and working with different API's
 2. Learning new concept - About Modules.
 3. learning to use link_to tag functionality
@@ -51,7 +51,6 @@
 5. finding out - query's that match with "giphy" as action "rainbow cat" as query_req.
 
 ## Stretch Goals
-
 1. Have a login/SignUp System, so that individual user can use.
 2. Create a Bookmark, which show's the list of saved bookmark and use it in future.
 3. Test my app using Rspec.

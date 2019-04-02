@@ -4,9 +4,11 @@
 - HTML & CSS
 - Ruby on rails 5.2.2.1
 - 5 APIs
+- [LUIS(Language Understanding)](https://docs.microsoft.com/en-gb/azure/cognitive-services/luis/what-is-luis)
 - Bootstrap
 - HTTParty gem
 - PostgreSQL
+- [SENTRY](https://docs.sentry.io/)
 
 ## Description
  - GERTY is a Virtual Assistant that helps you find information quickly. Be it current weather,
@@ -14,17 +16,18 @@
     Ask away and get answer to your question and get on without scrolling through endless pages
     of google search results.
  -  GERTY is powered by:
-    1. OMDB API
-    2. News API
-    3. Weather API
-    4. Quotes API
-    5. Giphy API
+    1. [OMDB API](http://www.omdbapi.com/)
+    2. [News API](https://newsapi.org/)
+    3. [Weather API](https://darksky.net/dev)
+    4. [Quotes API](http://quotes.rest/)
+    5. [Giphy API](https://giphy.com/)
 
 ## Approach
 
 - My aim for this project to learn How to use API's and build something useful that I can use in future.
 - Understand how to use rails app.
 - Building API's that consumes other API's.
+- Learn to use LUIS(Language Understanding)
 
 1. Designed the website from wireframe.
 2. Created trello app with designed card task. eg: Todo list, doing, done, Feature and Aim.
@@ -46,6 +49,12 @@
 4. to make the all the query of API's to be used in a single home page.
 5. finding out - query's that match with "giphy" as action "rainbow cat" as query_req.
 
+## Stretch Goals
+
+1. Have a login/SignUp System, so that individual user can use.
+2. Create a Bookmark, which show's the list of saved bookmark and use it in future.
+3. Test my app using Rspec.
+
 ## Learn about API's:
 
 ### What is an API? (Application Programming Interface)
@@ -53,6 +62,8 @@
 
 ### What Is an Example of an API?
 - When you use an application on your mobile phone, the application connects to the Internet and sends data to a server. The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone. The application then interprets that data and presents you with the information you wanted in a readable way. This is what an API is - all of this happens via API.
+
+More about [API-Blog](https://medium.com/@perrysetgo/what-exactly-is-an-api-69f36968a41f)
 
 ### Deployment 
 - Heroku

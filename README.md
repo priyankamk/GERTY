@@ -28,6 +28,7 @@
 - Understand how to use rails app.
 - Building API's that consumes other API's.
 - Learn to use LUIS(Language Understanding)
+- Learn about environment variable to store API keys in private.
 
 1. Designed the website from wireframe.
 2. Created trello app with designed card task. eg: Todo list, doing, done, Feature and Aim.
@@ -64,6 +65,8 @@
 - When you use an application on your mobile phone, the application connects to the Internet and sends data to a server. The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone. The application then interprets that data and presents you with the information you wanted in a readable way. This is what an API is - all of this happens via API.
 
 More about [API-Blog](https://medium.com/@perrysetgo/what-exactly-is-an-api-69f36968a41f)
+
+### [Environment variable - My Blog](https://medium.com/@priyankamukund/how-to-store-and-use-secrets-in-a-rails-6bafeffd645f?source=friends_link&sk=5d302e285cfdcfd7f7bd521181291b9e)
 
 ### Deployment 
 - Heroku

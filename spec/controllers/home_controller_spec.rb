@@ -37,6 +37,8 @@ RSpec.describe HomeController, type: :controller do
 
     context "when query params is weather" do
       let(:query_string) { 'weather in melbourne' }
+      let(:current_intent) {'Weather'}
+      let(:current_entity) {'melbourne'}
 
       let(:geocoder_response) do
         {
@@ -61,7 +63,7 @@ RSpec.describe HomeController, type: :controller do
       end
 
       before do 
-        stub_request(:get, "https://api.opencagedata.com/geocode/v1/json?key=#{ENV['GEOCODER_API_KEY']}&q=melbourne").
+        stub_request(:get, "https://api.opencagedata.com/geocode/v1/json?key=#{ENV['GEOCODER_API_KEY']}&q=#{current_entity}").
           with(
              headers: {
             'Accept'=>'*/*',
@@ -107,7 +109,7 @@ RSpec.describe HomeController, type: :controller do
       end
 
       before do 
-        stub_request(:get, "http://api.giphy.com/v1/gifs/search?api_key=#{ENV['GIPHY_API_KEY']}&limit=15&offset=2&q=rainbow%20cat").
+        stub_request(:get, "http://api.giphy.com/v1/gifs/search?api_key=#{ENV['GIPHY_API_KEY']}&limit=15&offset=2&q=#{current_entity}").
           with(
             headers: {
               'Accept'=>'*/*',
@@ -140,7 +142,7 @@ RSpec.describe HomeController, type: :controller do
       end
 
       before do 
-        stub_request(:get, "http://www.omdbapi.com/?apikey=#{ENV['MOVIE_API_KEY']}&s=avengers").
+        stub_request(:get, "http://www.omdbapi.com/?apikey=#{ENV['MOVIE_API_KEY']}&s=#{current_entity}").
           with(
             headers: {
               'Accept'=>'*/*',
@@ -154,6 +156,38 @@ RSpec.describe HomeController, type: :controller do
         expect(History.last.query).to eq(query_string)
       end
     end
-    
+
+    context "when query params is quote" do
+      let(:query_string) { 'motivation quote' }
+      let(:current_entity) { 'motivation' }
+      let(:current_intent) { 'Quote' }
+
+      let(:quote_response) do
+        {
+          'contents' => 
+          {
+            'quote' => " My motivation comes from the Lord. My favorite verse is, 'Whatever you do, work at it with all your heart, as working for the Lord, not for men ...' (Colossians 3:23). As long as that remains my motivation I can always work hard.",
+            'author' => 'Stephen McDowell'
+          }
+        }
+      end
+
+      before do 
+        stub_request(:get, "http://quotes.rest/quote/search?minlength=100&maxlength=300&query=#{current_entity}&private=false").
+          with(
+            headers: {
+              # 'Accept'=>'*/*',
+              # 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+              # 'User-Agent'=>'Ruby',
+              'X-TheySaidSo-Api-Secret': ENV['QUOTE_API_KEY']
+              }).to_return(status: 200, body: JSON.dump(quote_response), headers: {'Content-Type': 'application/json'})
+      end
+
+      it 'create a new history record' do
+        get :index, params: {query: query_string}
+        expect(History.last.query).to eq(query_string)
+      end
+
+    end
   end
 end

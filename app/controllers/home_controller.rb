@@ -18,9 +18,6 @@ class HomeController < ApplicationController
     history.query = params[:query].downcase
     history.save!
 
-    # query_array = params[:query].downcase.split(" ")
-    # action = query_array.shift #eg: giphy or movie
-    # query_req = query_array.join(' ') #eg: avengers or rainbow cats  
     action, query_req = Api::IntentRecognizer.new.recognize(query: params[:query])
      
     if action == "weather"

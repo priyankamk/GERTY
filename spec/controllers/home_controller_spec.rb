@@ -122,5 +122,38 @@ RSpec.describe HomeController, type: :controller do
       end
     end
     
+    context "when query params is movie" do
+      let(:query_string) {'show me the list of avengers movie' }
+      let(:current_entity) { 'avengers' }
+      let(:current_intent) { 'Movie' }
+
+      let(:movie_response) do
+        {
+          'Search' => 
+          [
+            {
+              'Title' => 'The Avengers',
+              'imdbID' => 'tt0848228'
+            }
+          ]
+        }
+      end
+
+      before do 
+        stub_request(:get, "http://www.omdbapi.com/?apikey=#{ENV['MOVIE_API_KEY']}&s=avengers").
+          with(
+            headers: {
+              'Accept'=>'*/*',
+              'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+              'User-Agent'=>'Ruby'}).
+              to_return(status: 200, body: JSON.dump(movie_response), headers: {'Content-Type': 'application/json'})
+      end
+
+      it 'create a new history record' do
+        get :index, params: {query: query_string}
+        expect(History.last.query).to eq(query_string)
+      end
+    end
+    
   end
 end

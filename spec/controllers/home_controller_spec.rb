@@ -189,5 +189,40 @@ RSpec.describe HomeController, type: :controller do
       end
 
     end
+
+    context "when query params is news" do 
+      let(:query_string) { 'latest brexit news' }
+      let(:current_entity) { 'brexit' }
+      let(:current_intent) { 'News' }
+
+      let(:news_response) do
+        {
+          'articles' => [
+            {
+              'author' => 'BENJAMIN MUELLER and PALKO KARASZ',
+              'title' => 'Britons Set to March in London to Demand Second Brexit Vote',
+              'description' => 'Anti-Brexit campaigners outside Parliament in London this month. A march on Saturday is calling for a “People’s Vote” on Brexit.',
+              'url' => 'https://www.nytimes.com/2019/03/23/world/europe/brexit-march-london.html',
+              'urlToImage' => 'https://static01.nyt.com/images/2019/03/23/world/23march1/23march1-facebookJumbo.jpg'
+            }
+          ]
+        }
+      end
+
+      before do 
+        stub_request(:get, "https://newsapi.org/v2/everything?apiKey=#{ENV['NEWS_API_KEY']}&q=#{current_entity}").
+          with(
+            headers: {
+              'Accept'=>'*/*',
+              'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+              'User-Agent'=>'Ruby'}).
+              to_return(status: 200, body: JSON.dump(news_response), headers: {'Content-Type': 'application/json'})
+      end
+
+      it 'create a new history record' do
+        get :index, params: {query: query_string}
+        expect(History.last.query).to eq(query_string)
+      end
+    end
   end
 end

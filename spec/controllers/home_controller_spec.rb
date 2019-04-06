@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe HomeController, type: :controller do
+  render_views
+
   let(:luis_response) do
     {
       'query' => query_string,
@@ -85,6 +87,12 @@ RSpec.describe HomeController, type: :controller do
 
         expect(History.last.query).to eq(query_string)
       end  
+
+      it 'shows weather for australia/melbourne' do
+        get :index, params: {query: query_string}
+
+        expect(response.body).to include('Australia/Melbourne')
+      end
     end
 
     context "when query params is giphy" do
@@ -97,11 +105,11 @@ RSpec.describe HomeController, type: :controller do
           'data' => 
           [
             {
-              'slug' => 'funny-animation-art-5jWeEENNyVln9vrnoP'
-            },
-            'images' => {
-              'original' => {
-                'url' => 'https://media3.giphy.com/media/5jWeEENNyVln9vrnoP/giphy.gif'
+              'slug' => 'funny-animation-art-5jWeEENNyVln9vrnoP',
+              'images' => {
+                'original' => {
+                  'url' => 'https://media3.giphy.com/media/5jWeEENNyVln9vrnoP/giphy.gif'
+                }
               }
             }
           ]
@@ -118,9 +126,14 @@ RSpec.describe HomeController, type: :controller do
               to_return(status: 200, body: JSON.dump(giphy_response), headers: {'Content-Type': 'application/json'})
       end
 
-      it 'create a new history record' do
+      it 'creates a new history record' do
         get :index, params: {query: query_string}
         expect(History.last.query).to eq(query_string)
+      end
+
+      it 'shows for giphy images' do
+        get :index, params: {query: query_string}
+        expect(response.body).to include('https://media3.giphy.com/media/5jWeEENNyVln9vrnoP/giphy.gif')
       end
     end
     
@@ -151,7 +164,7 @@ RSpec.describe HomeController, type: :controller do
               to_return(status: 200, body: JSON.dump(movie_response), headers: {'Content-Type': 'application/json'})
       end
 
-      it 'create a new history record' do
+      it 'creates a new history record' do
         get :index, params: {query: query_string}
         expect(History.last.query).to eq(query_string)
       end
@@ -183,7 +196,7 @@ RSpec.describe HomeController, type: :controller do
               }).to_return(status: 200, body: JSON.dump(quote_response), headers: {'Content-Type': 'application/json'})
       end
 
-      it 'create a new history record' do
+      it 'creates a new history record' do
         get :index, params: {query: query_string}
         expect(History.last.query).to eq(query_string)
       end
@@ -219,7 +232,7 @@ RSpec.describe HomeController, type: :controller do
               to_return(status: 200, body: JSON.dump(news_response), headers: {'Content-Type': 'application/json'})
       end
 
-      it 'create a new history record' do
+      it 'creates a new history record' do
         get :index, params: {query: query_string}
         expect(History.last.query).to eq(query_string)
       end

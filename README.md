@@ -1,5 +1,7 @@
 # [GERTY](https://gerty-app-5.herokuapp.com/)
 
+[![CircleCI](https://circleci.com/gh/priyankamk/GERTY.svg?style=svg)](https://circleci.com/gh/priyankamk/GERTY)
+
 ## Build with
 - HTML5 & CSS3
 - Ruby on rails 5.2.2.1

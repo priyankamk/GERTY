@@ -25,7 +25,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'httparty'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'sentry-raven'
-gem 'rspec-rails', '~> 3.8.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -44,6 +43,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'webmock'
+  gem 'rspec_junit_formatter'
+  gem 'rspec-rails', '~> 3.8.2'
 end
 
 group :development do

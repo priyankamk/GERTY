@@ -15,11 +15,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run:
-        command: bundle install --jobs=4 --retry=3 --path vendor/bundle
-      - run:
-        command: bundle exec rake db:create
-      - run: 
-        command: bundle exec rake db:schema:load
-      - run:
-        command: bundle exec rake spec
+      - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
+      - run: bundle exec rake db:create
+      - run: bundle exec rake db:schema:load
+      - run: bundle exec rake spec

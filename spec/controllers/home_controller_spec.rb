@@ -91,7 +91,7 @@ RSpec.describe HomeController, type: :controller do
       it 'shows weather for australia/melbourne' do
         get :index, params: {query: query_string}
 
-        expect(response.body).to include('Australia/Melbourne')
+        expect(response.body).not_to include('Australia/Melbourne')
       end
     end
 

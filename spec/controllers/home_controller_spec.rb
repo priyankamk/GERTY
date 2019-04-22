@@ -168,6 +168,11 @@ RSpec.describe HomeController, type: :controller do
         get :index, params: {query: query_string}
         expect(History.last.query).to eq(query_string)
       end
+
+      it 'show for movie title' do
+        get :index, params: {query: query_string}
+        expect(response.body).to include('The Avengers')
+      end
     end
 
     context "when query params is quote" do

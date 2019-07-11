@@ -13,17 +13,13 @@
 - [SENTRY](https://docs.sentry.io/) - For error tracking
 
 ## Description
- - GERTY is a Virtual Assistant that helps you find        information quickly. Be it current weather,
-    breaking news or getting inspired with an inspirational quote to start your day!
-    Ask away and get answer to your question and get on without scrolling through endless pages
-    of google search results.
+ - GERTY is a Virtual Personal Assistant that helps you find information quickly. Be it current weather,breaking news or check movie reviews and look at funny giphy to start your day! Ask away and get answer to your question and get on without scrolling through endless pages of google search results.
 
  -  GERTY is powered by:
     1. [News API](https://newsapi.org/)
     2. [Weather API](https://darksky.net/dev)
     3. [OMDB API](http://www.omdbapi.com/)
-    4. [Quotes API](http://quotes.rest/)
-    5. [Giphy API](https://giphy.com/)
+    4. [Giphy API](https://giphy.com/)
 
 ## Objective
 - My aim for this project to learn How to use API's and build something useful that I can use in future.
